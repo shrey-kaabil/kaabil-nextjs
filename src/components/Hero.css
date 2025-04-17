@@ -1,0 +1,351 @@
+/* Hero section styles */
+.hero_wrapper {
+  position: relative;
+  padding: 0px 0;
+  background-color: var(--them-color);
+}
+
+.hero_wrapper .div-shap1 {
+  background-image: url('../assets/shap-2.png');
+  height: 600px;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.hero_wrapper .div-hero-box {
+  background-image: url('../assets/Union.svg');
+  height: 66%;
+  width: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 18%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 23%;
+  z-index: 1;
+}
+
+.hero_wrapper .div-hero-box .hero-subtitle {
+  font-size: 40px;
+  font-family: var(--font-family);
+  color: var(--balck-color);
+  margin: 0px !important;
+}
+
+.hero_wrapper .div-hero-box .hero-title {
+  font-size: 90px;
+  font-family: var(--font-family);
+  color: var(--orange-color);
+  margin: 0px !important;
+}
+
+.hero-banner-img {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-banner-img img {
+  height: auto;
+  width: 100%;
+  max-width: 800px;
+  margin-top: 300px;
+  object-fit: contain;
+}
+
+.bner-tilt {
+  margin-left: 209px;
+  margin-top: -40px;
+}
+
+.bner-tilt h3 {
+  font-size: 24px;
+  font-family: var(--font-family);
+  color: var(--balck-color);
+  margin-bottom: 10px;
+}
+
+.bner-tilt span {
+  color: var(--blue-color);
+}
+
+.bner-tilt svg {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.hero_buttons {
+  margin-top: 20px;
+}
+
+/* Button styles */
+.blue-btn {
+  background-color: #4361EE;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+  min-width: 120px;
+  box-shadow: 0 2px 4px rgba(67, 97, 238, 0.15);
+}
+
+.blue-btn:hover {
+  background-color: #3651DB;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(67, 97, 238, 0.2);
+}
+
+.border-btn {
+  background-color: white;
+  color: #FF8E25;
+  padding: 12px 24px;
+  border: 1.5px solid #FF8E25;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+  min-width: 120px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.border-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: #FF8E25;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.border-btn:hover {
+  color: white;
+}
+
+.border-btn:hover::before {
+  width: 100%;
+}
+
+/* Responsive styles */
+@media (max-width: 1400px) {
+  .hero-banner-img img {
+    height: 459px;
+    width: auto;
+    margin-top: 300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero-banner-img img {
+    height: 459px;
+    width: auto;
+    margin-top: 300px;
+  }
+
+  .hero_wrapper .div-hero-box {
+    height: 100%;
+    width: 100%;
+    display: block;
+    padding-top: 30px;
+  }
+
+  .bner-tilt {
+    margin-left: 177px;
+    margin-top: -130px;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero_wrapper .row {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  .hero_wrapper .div-hero-box {
+    background-image: url('../assets/Union-2.svg');
+    position: static;
+    width: 100%;
+    height: 441px;
+    padding-left: 10%;
+    padding-top: 50px;
+  }
+
+  .hero_wrapper .div-shap1 {
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  .bner-tilt {
+    margin-left: 160px;
+    margin-top: -43px;
+  }
+
+  .hero-banner-img img {
+    height: 450px;
+    width: auto;
+    margin-top: -27px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-banner-img img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .div-hero-box {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .bner-tilt {
+    text-align: center;
+  }
+
+  .hero-banner-img img {
+    height: 400px;
+    width: auto;
+    margin-top: -90px;
+  }
+
+  .hero-banner-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .bner-tilt {
+    margin-left: 0 !important;
+    margin-top: -43px;
+  }
+
+  .hero_wrapper .div-hero-box {
+    display: flex !important;
+    justify-content: flex-start;
+    align-items: baseline;
+    margin-top: 8px;
+  }
+
+  .hero_wrapper .div-hero-box .hero-title {
+    font-size: 73px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero_wrapper .div-hero-box .hero-title {
+    font-size: 44px;
+  }
+
+  .hero_wrapper .div-hero-box {
+    width: 410px;
+  }
+
+  .hero-banner-img img {
+    height: 300px;
+  }
+
+  .blue-btn, .border-btn {
+    padding: 10px 20px;
+    font-size: 14px;
+    min-width: 110px;
+  }
+
+  .d-flex.gap-2 {
+    justify-content: center;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .hero_wrapper .div-hero-box {
+    width: 300px;
+  }
+
+  .hero_wrapper .div-hero-box .hero-subtitle {
+    font-size: 22px;
+  }
+
+  .hero_wrapper .div-hero-box .hero-title {
+    font-size: 30px;
+  }
+
+  .hero_wrapper .div-hero-box {
+    padding-top: 26px;
+  }
+
+  .blue-btn, .border-btn {
+    padding: 8px 16px;
+    font-size: 13px;
+    min-width: 100px;
+  }
+
+  .d-flex.gap-2 {
+    gap: 0.75rem;
+  }
+
+  .hero-banner-img img {
+    margin-top: -184px;
+  }
+}
+
+/* Utility classes */
+.d-lg-none {
+  display: none;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-lg-block {
+  display: block;
+}
+
+.d-none {
+  display: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.gap-2 {
+  gap: 1rem;
+}
+
+@media (min-width: 992px) {
+  .d-lg-none {
+    display: none;
+  }
+  
+  .d-lg-block {
+    display: block;
+  }
+}
+
+@media (max-width: 991px) {
+  .d-lg-none {
+    display: block;
+  }
+  
+  .d-lg-block {
+    display: none;
+  }
+}

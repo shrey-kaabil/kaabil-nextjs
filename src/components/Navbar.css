@@ -1,0 +1,139 @@
+.navbar {
+  background-color: var(--them-color) !important;
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .navbar-collapse {
+  background-color: var(--them-color) !important;
+}
+
+.navbar .nav-item {
+  padding-right: 20px;
+}
+
+.navbar .nav-item a {
+  font-family: var(--font-family);
+  font-size: 30px;
+  color: var(--blue-color);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  position: relative;
+  padding: 8px 0;
+}
+
+.navbar .nav-item a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--orange-color);
+  transition: width 0.3s ease;
+}
+
+.navbar .nav-item a:hover::after {
+  width: 100%;
+}
+
+.navbar .nav-item a:hover {
+  color: var(--orange-color);
+}
+
+.navbar .nav-btn {
+  border: 1px solid var(--orange-color) !important;
+  font-family: var(--font-family);
+  color: var(--orange-color);
+  font-size: 28px;
+  padding: 5px 50px;
+  border-radius: 20px;
+  background: transparent;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.navbar .nav-btn:hover {
+  color: #fff;
+  background: var(--orange-color);
+  transform: translateY(-2px);
+}
+
+.navbar-toggler {
+  border: none;
+  padding: 0.5rem;
+}
+
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+
+.navbar .navbar-nav {
+  border-bottom: 2px solid var(--orange-color);
+}
+
+/* Responsive styles */
+@media (max-width: 1400px) {
+  .navbar .nav-item {
+    padding-right: 10px;
+  }
+  
+  .navbar .nav-item a {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1050px) {
+  .navbar .nav-item {
+    padding-right: 0px;
+  }
+  
+  .navbar .navbar-nav {
+    border-bottom: none;
+  }
+}
+
+@media (max-width: 991px) {
+  .navbar .nav-item {
+    padding: 10px 0;
+  }
+  
+  .navbar .nav-item a {
+    font-size: 16px;
+  }
+  
+  .navbar .nav-btn {
+    font-size: 16px;
+    padding: 8px 25px;
+    margin-top: 10px;
+  }
+
+  .navbar-brand img {
+    width: 120px !important;
+    height: auto !important;
+  }
+
+  .navbar-collapse {
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem 0;
+  }
+  
+  .navbar .nav-item a {
+    font-size: 20px;
+  }
+  
+  .navbar .nav-btn {
+    font-size: 20px;
+    padding: 5px 30px;
+    border-radius: 20px;
+  }
+
+  .navbar-brand img {
+    width: 100px !important;
+  }
+} 
