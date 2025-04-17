@@ -1,0 +1,199 @@
+/* Challenge Learn Section */
+.chllenging-lern {
+  padding: 60px 0;
+  background-image: url('../../assets/learning-chng-bner.png.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-title_title {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-title_title h2 {
+  color: #FF8E25;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+}
+
+/* Learning Categories */
+.learning-categories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  background: rgba(251, 251, 247, 0.2);
+}
+
+.category-item {
+  flex: 1;
+  max-width: 280px;
+  text-align: center;
+}
+
+.category-item h3 {
+  font-size: 24px;
+  color: #333;
+  margin-top: 15px;
+  font-weight: 500;
+}
+
+.category-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.challenge-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Disconnected Efforts Section */
+.disconnected-efforts {
+  padding: 60px 0;
+  background: linear-gradient(to bottom, transparent, #F5F9FF);
+}
+
+.diss-effort {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.diss-effort .section-title_title h2 {
+  color: #FF8E25;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 60px;
+}
+
+.solutions-wrapper {
+  margin-top: 40px;
+}
+
+.solutions-content {
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 40px 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.solution-text {
+  flex: 1;
+  text-align: center;
+}
+
+.solution-text h3 {
+  font-size: 32px;
+  color: #333;
+  margin: 0;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .learning-categories {
+    padding: 15px;
+    gap: 15px;
+  }
+  
+  .category-item {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 992px) {
+  .learning-categories {
+    flex-wrap: wrap;
+  }
+  
+  .category-item {
+    flex: 0 0 calc(50% - 15px);
+    max-width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .chllenging-lern {
+    padding: 40px 0;
+  }
+
+  .section-title_title {
+    margin-bottom: 30px;
+  }
+
+  .section-title_title h2 {
+    font-size: 26px;
+  }
+
+  .learning-categories {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-item {
+    flex: 0 0 100%;
+    max-width: 280px;
+    width: 100%;
+  }
+
+  .category-item h3 {
+    font-size: 20px;
+    margin-top: 10px;
+  }
+
+  .diss-effort .section-title_title h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+  }
+
+  .solutions-content {
+    flex-direction: column;
+    padding: 20px;
+    gap: 25px;
+  }
+
+  .solution-text h3 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .chllenging-lern {
+    padding: 30px 0;
+  }
+
+  .section-title_title h2 {
+    font-size: 24px;
+  }
+
+  .category-item h3 {
+    font-size: 18px;
+  }
+
+  .diss-effort .section-title_title h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .solution-text h3 {
+    font-size: 20px;
+  }
+} 

@@ -6,7 +6,7 @@
 }
 
 .hero_wrapper .div-shap1 {
-  background-image: url('../assets/shap-2.png');
+  background-image: url('../../assets/shap-2.png');
   height: 600px;
   width: 100%;
   background-size: contain;
@@ -15,7 +15,7 @@
 }
 
 .hero_wrapper .div-hero-box {
-  background-image: url('../assets/Union.svg');
+  background-image: url('../../assets/Union.svg');
   height: 66%;
   width: 100%;
   background-size: contain;
@@ -175,7 +175,7 @@
   }
 
   .hero_wrapper .div-hero-box {
-    background-image: url('../assets/Union-2.svg');
+    background-image: url('../../assets/Union-2.svg');
     position: static;
     width: 100%;
     height: 441px;

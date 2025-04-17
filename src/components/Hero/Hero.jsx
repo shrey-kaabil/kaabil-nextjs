@@ -1,9 +1,8 @@
 import React from 'react';
 import Image from 'next/image';
 import './Hero.css';
-import heroImg from '../assets/hero-img.png';
-import shape2 from '../assets/shap-2.png';
-import union from '../assets/Union.svg';
+import heroImg from '../../assets/hero-img.png';
+
 
 const Hero = () => {
   return (
