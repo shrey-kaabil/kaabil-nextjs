@@ -9,7 +9,7 @@ import img4 from '../../assets/Img4.png';
 const Challenge = () => {
   return (
     <>
-      <section className="chllenging-lern">
+      <section id="challenge" className="chllenging-lern">
         <div className="container">
           <div className="section-title_title">
             <h2>The Challenges In Learning</h2>

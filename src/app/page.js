@@ -10,6 +10,10 @@ import Excel from '@/components/Excel/Excel';
 import '../components/Challenge/Challenge.css';
 import '../components/DisconnectedEfforts/DisconnectedEfforts.css';
 import '../components/Excel/Excel.css';
+import Solutions from '@/components/Solutions/Solutions';
+import Join from '@/components/Join/Join';
+import Stories from '@/components/Stories/Stories';
+import Launching from '@/components/Launching/Launching';
 
 export default function Home() {
   return (
@@ -17,9 +21,11 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Excel />
+      <Solutions />
+      <Join />
+      <Stories />
       <Challenge />
-      {/* <DisconnectedEfforts /> */}
-
+      <Launching />
       <FAQ />
       <Footer/>
     </main>

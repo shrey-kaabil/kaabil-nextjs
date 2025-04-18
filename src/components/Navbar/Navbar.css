@@ -14,7 +14,8 @@
 
 .navbar .nav-item a {
   font-family: var(--font-family);
-  font-size: 30px;
+  font-size: 24px;
+  font-weight: 500;
   color: var(--blue-color);
   text-decoration: none;
   transition: all 0.3s ease;
@@ -45,7 +46,7 @@
   border: 1px solid var(--orange-color) !important;
   font-family: var(--font-family);
   color: var(--orange-color);
-  font-size: 28px;
+  font-size: 24px;
   padding: 5px 50px;
   border-radius: 20px;
   background: transparent;
@@ -70,6 +71,18 @@
 
 .navbar .navbar-nav {
   border-bottom: 2px solid var(--orange-color);
+}
+
+.navbar-nav .nav-link {
+  color: #3063FD;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #1a4bd9;
 }
 
 /* Responsive styles */
@@ -116,6 +129,11 @@
   .navbar-collapse {
     padding: 20px 0;
   }
+
+  .navbar-nav .nav-link {
+    font-size: 16px;
+    padding: 0.5rem 0.75rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -135,5 +153,10 @@
 
   .navbar-brand img {
     width: 100px !important;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 15px;
+    padding: 0.5rem 0.5rem;
   }
 } 

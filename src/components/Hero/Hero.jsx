@@ -6,16 +6,16 @@ import heroImg from '../../assets/hero-img.png';
 
 const Hero = () => {
   return (
-    <section className="hero_wrapper">
+    <section id="hero" className="hero_wrapper">
       <div className="container">
         <div className="row">
-          <div className="col-lg-4 col-sm-12">
+          <div className="col-lg-5 col-sm-12">
             <div className="hero-banner-img">
               <Image 
                 src={heroImg}
                 alt="Hero Banner" 
-                width={675}
-                height={584}
+                width={800}
+                height={692}
                 priority
                 className="hero-image"
               />
@@ -30,7 +30,7 @@ const Hero = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-8 col-sm-12">
+          <div className="col-lg-7 col-sm-12">
             <div className="div-shap1">
               <div className="div-hero-box">
                 <p className="hero-subtitle">First Generation</p>
@@ -44,7 +44,7 @@ const Hero = () => {
             <div className="bner-tilt d-lg-block d-none">
               <h3>Start Learning With Us</h3>
               <h3>
-                <span>Geetu Bhaiya</span> and <span>Neha Didi</span>
+                <span>Geetu Bhaiya</span> and <span>Pooja Didi</span>
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="50" height="50" viewBox="0 0 24 24">
                   <path fill="#ff8e25" d="m16.004 9.414-8.607 8.607-1.414-1.414L14.589 8H7.004V6h11v11h-2z" />
                 </svg>

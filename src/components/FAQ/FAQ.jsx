@@ -8,7 +8,7 @@ const FAQ = () => {
 
   const tabsData = [
     {
-      title: "Kaabil Teachers",
+      title: "Kaabil TAs",
       faqs: [
         {
           question: "Does Kaabil Teacher affect my device's performance?",
@@ -155,12 +155,15 @@ const FAQ = () => {
   };
 
   return (
-    <section className="faq_wrapper">
+    <section id="faq" className="Solutions_wrapper">
       <div className="container">
-        <div className="faq_header">
+        <div className="section-title_title">
           <h2>How It Works for You?</h2>
         </div>
-        <div className="faq_content">
+      </div>
+      
+      <div className="work-maintab-section">
+        <div className="container">
           <div className="faq_tabs">
             {tabsData.map((tab, index) => (
               <button
@@ -185,7 +188,22 @@ const FAQ = () => {
                 >
                   <h3>{faq.question}</h3>
                   <span className="faq_icon">
-                    {activeIndex === index ? '−' : '+'}
+                    <svg 
+                      viewBox="0 0 24 24" 
+                      width="24" 
+                      height="24" 
+                      fill="none" 
+                      stroke="currentColor" 
+                      strokeWidth="2" 
+                      strokeLinecap="round" 
+                      strokeLinejoin="round"
+                    >
+                      {activeIndex === index ? (
+                        <path d="M18 15l-6-6-6 6"/>
+                      ) : (
+                        <path d="M6 9l6 6 6-6"/>
+                      )}
+                    </svg>
                   </span>
                 </div>
                 <div className={`faq_answer ${activeIndex === index ? 'show' : ''}`}>

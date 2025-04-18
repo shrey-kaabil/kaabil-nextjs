@@ -1,3 +1,4 @@
+'use client';
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
@@ -5,6 +6,20 @@ import './Navbar.css';
 import logo from '../../assets/logo.png';
 
 const Navbar = () => {
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      const offset = 80; // Adjust this value based on your navbar height
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <nav className="navbar navbar-expand-lg">
       <div className="container-fluid">
@@ -12,14 +27,14 @@ const Navbar = () => {
           <Image 
             src={logo}
             alt="Kaabil Logo" 
-            width={150}
-            height={50}
+            width={160}
+            height={60}
             className="img-fluid"
             priority
           />
         </Link>
         <div className="d-lg-none d-block ms-auto" role="search">
-          <button className="btn nav-btn" type="submit">Try Now</button>
+          <button className="btn nav-btn" type="submit">Use The App</button>
         </div>
         <button 
           className="navbar-toggler ms-5" 
@@ -35,26 +50,26 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
             <li className="nav-item">
-              <Link className="nav-link" href="/">Home</Link>
+              <button className="nav-link" onClick={() => scrollToSection('hero')}>Home</button>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/solutions">Solutions</Link>
+              <button className="nav-link" onClick={() => scrollToSection('solutions')}>Solutions</button>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/stories">Stories</Link>
+              <button className="nav-link" onClick={() => scrollToSection('stories')}>Stories</button>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/purpose">Purpose</Link>
+              <button className="nav-link" onClick={() => scrollToSection('challenge')}>Purpose</button>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/for-you">For You</Link>
+              <button className="nav-link" onClick={() => scrollToSection('faq')}>For You</button>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" href="/ai-schools">AI-Schools</Link>
+              <button className="nav-link" onClick={() => scrollToSection('launching')}>AI-Schools</button>
             </li>
           </ul>
           <div className="d-flex ms-auto justify-content-center" role="search">
-            <button className="btn nav-btn" type="submit">Try Now</button>
+            <button className="btn nav-btn" type="submit">Use The App</button>
           </div>
         </div>
       </div>

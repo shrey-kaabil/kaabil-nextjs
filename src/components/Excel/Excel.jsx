@@ -7,7 +7,7 @@ import excelApply from '../../assets/excel-apply-removebg-preview.png';
 
 const Excel = () => {
   return (
-    <section className="aply-excl">
+    <section id="excel" className="aply-excl">
       <div className="container">
         <div className="section-title_title">
           <h2>Understand. Apply. Excel every day.</h2>
