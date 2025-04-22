@@ -34,7 +34,9 @@ const Navbar = () => {
           />
         </Link>
         <div className="d-lg-none d-block ms-auto" role="search">
-          <button className="btn nav-btn" type="submit">Use The App</button>
+          <Link href="https://kaabil.me/dashboard" target="_blank" rel="noopener noreferrer">
+            <button className="btn nav-btn" type="submit">Use The App</button>
+          </Link>
         </div>
         <button 
           className="navbar-toggler ms-5" 
@@ -69,7 +71,9 @@ const Navbar = () => {
             </li>
           </ul>
           <div className="d-flex ms-auto justify-content-center" role="search">
-            <button className="btn nav-btn" type="submit">Use The App</button>
+            <Link href="https://kaabil.me/dashboard" target="_blank" rel="noopener noreferrer">
+              <button className="btn nav-btn" type="submit">Use The App</button>
+            </Link>
           </div>
         </div>
       </div>

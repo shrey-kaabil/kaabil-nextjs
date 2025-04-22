@@ -2,9 +2,10 @@
 import React from 'react';
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper';
+import { Pagination, Autoplay } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/autoplay';
 import './Stories.css';
 import testImg from '../../assets/test-mig.jpg';
 
@@ -48,13 +49,17 @@ const Stories = () => {
         </div>
         <div className="stories_content">
           <Swiper
-            modules={[Pagination]}
+            modules={[Pagination, Autoplay]}
             spaceBetween={30}
             slidesPerView={1}
             pagination={{
               clickable: true,
               bulletActiveClass: 'swiper-pagination-bullet-active',
               bulletClass: 'swiper-pagination-bullet',
+            }}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
             }}
             className="mySwiper"
           >

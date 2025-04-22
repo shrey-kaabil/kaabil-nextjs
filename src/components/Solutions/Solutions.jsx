@@ -1,5 +1,5 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import './Solutions.css';
 import solutionImg from '../../assets/img01.png';
@@ -11,6 +11,7 @@ import vector7 from '../../assets/Vector7.png';
 
 const Solutions = () => {
   const [activeTab, setActiveTab] = useState(0);
+  const [isAutoSwitching, setIsAutoSwitching] = useState(true);
 
   const tabs = [
     {
@@ -82,6 +83,24 @@ const Solutions = () => {
     }
   ];
 
+  // Auto switch tabs every 5 seconds
+  useEffect(() => {
+    let interval;
+    if (isAutoSwitching) {
+      interval = setInterval(() => {
+        setActiveTab((prevTab) => (prevTab + 1) % tabs.length);
+      }, 5000);
+    }
+    return () => clearInterval(interval);
+  }, [isAutoSwitching, tabs.length]);
+
+  const handleTabClick = (index) => {
+    setActiveTab(index);
+    // Reset auto-switching timer
+    setIsAutoSwitching(false);
+    setTimeout(() => setIsAutoSwitching(true), 10000);
+  };
+
   return (
     <section id="solutions" className="Solutions_wrapper">
       <div className="container">
@@ -93,7 +112,7 @@ const Solutions = () => {
             {tabs.map((tab, index) => (
               <button
                 key={tab.id}
-                onClick={() => setActiveTab(index)}
+                onClick={() => handleTabClick(index)}
                 className={activeTab === index ? 'active' : ''}
               >
                 {tab.title}

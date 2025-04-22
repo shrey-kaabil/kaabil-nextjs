@@ -9,6 +9,7 @@ import icon3 from '../../assets/icon3.svg';
 import xLogo from '../../assets/x-logo.svg';
 import sendIcon from '../../assets/send.svg';
 import mailIcon from '../../assets/mail.svg';
+import youtube from '../../assets/youtube.svg';
 import whatsappIcon from '../../assets/Whatsapp.svg';
 import NextGenModal from '../Modal/NextGenModal';
 import MathematicsModal from '../Modal/MathematicsModal';
@@ -33,6 +34,9 @@ const Footer = () => {
               <div className="footer-icon">
                 <p className="f-text1">© 2025</p>
                 <div className="icon">
+                <a href="https://www.youtube.com/@Kaabilme/" target="_blank" rel="noopener noreferrer">
+                    <Image src={youtube} alt="youtube" width={26} height={26} />
+                  </a>
                   <a href="https://www.linkedin.com/company/kaabilme/" target="_blank" rel="noopener noreferrer">
                     <Image src={linkedin} alt="LinkedIn" width={24} height={24} />
                   </a>
