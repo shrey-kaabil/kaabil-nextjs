@@ -22,9 +22,9 @@ const Solutions = () => {
         text: {
           title: 'Teachers Can Instantly Generate And Share Homework',
           points: [
-            'Generate Similar Questions On-Demand To Match Your Curriculum',
+            'Instantly Generate Curriculum-Aligned Questions',
             'Convert Any PDF Into A Custom Computer-Based Test',
-            'Curate Endless, Personalized Practice Questions'
+            'Personalize Questions by Topic, Pattern, Difficulty, Pace, And Needs'
           ]
         },
         image: solutionImg2
@@ -39,9 +39,9 @@ const Solutions = () => {
           title: 'Understand The Thought Behind Each Question Asked',
           points: [
             'No Answers Given Directly',
-            'No Worries, Only A Safe Space',
+            'A Safe Space to Practice and Try each Question',
             'Enjoy Freedom Of Learning',
-            'Gain Experience (XP) And Know Your Strength In Chapter'
+            'Track Lesson Strengths through Earned XP'
           ]
         },
         image: solutionImg
@@ -55,10 +55,10 @@ const Solutions = () => {
         text: {
           title: 'No More Late Night Alone Problem Solving',
           points: [
-            'Ask Any Doubt 24/7 In English Or Hindi',
-            'Get Hints To Solve And Tricks To Remember',
+            'Ask your Kaabil TA any Doubt any Time in English or Hindi',
+            'Get Hints To Solve And Handy Tricks To Revise',
             'Build Critical Thinking',
-            'Earn Coins With Each Question'
+            'Type, Talk or Upload PDF to receive Instant Feedback'
           ]
         },
         image: solutionImg3
@@ -72,10 +72,9 @@ const Solutions = () => {
         text: {
           title: 'Personalized Guidance & Recommendations',
           points: [
-            'Targeted Revision Tips For Every Lesson',
             'Detailed Analysis Of Each Attempt Of The Question',
-            'Celebrate Small Wins Always',
-            'Correct Major Learning Gaps Early'
+            'Targeted Revision Tips For Every Lesson',
+            'Celebrate wins with Targeted Support and Correct Learning Gaps Early'
           ]
         },
         image: solutionImg4

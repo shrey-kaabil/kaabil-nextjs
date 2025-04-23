@@ -34,7 +34,7 @@ const Hero = () => {
                 className="hero-image"
               />
               <div className="bner-tilt d-lg-none d-block">
-                <h3>Start Learning With Us</h3>
+                <h3>Start Learning With</h3>
                 <h3>
                   <span>Geetu Bhaiya</span> and <span>Neha Didi</span>
                   <Link href="https://kaabil.me/dashboard" target="_blank" rel="noopener noreferrer">
@@ -62,7 +62,7 @@ const Hero = () => {
                     <h1 className="hero-title">Kaabil TAs</h1>
                     <div className="d-flex gap-2">
                       <button className="blue-btn" onClick={toggleContent}>Meet Us</button>
-                      <button className="border-btn" onClick={scrollToJoin}>Let's Explore</button>
+                      <button className="border-btn" onClick={scrollToJoin}>Let's Study</button>
                     </div>
                   </>
                 ) : (
@@ -86,7 +86,7 @@ const Hero = () => {
               </div>
             </div>
             <div className="bner-tilt d-lg-block d-none">
-              <h3>Start Learning With Us</h3>
+              <h3>Start Learning With</h3>
               <h3>
                 <span>Geetu Bhaiya</span> and <span>Pooja Didi</span>
                 <Link href="https://kaabil.me/dashboard" target="_blank" rel="noopener noreferrer">
