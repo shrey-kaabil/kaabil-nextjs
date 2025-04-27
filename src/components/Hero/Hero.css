@@ -1,66 +1,87 @@
 /* Hero section styles */
 .hero_wrapper {
-  padding: 60px 0;
-  background: linear-gradient(180deg, #FFF9F3 0%, #FFFFFF 100%);
+  padding: 0px 0px;
   position: relative;
   overflow: hidden;
 }
 
-.hero_wrapper .div-shap1 {
-  background-image: url('../../assets/shap-2.png');
+/* .hero_wrapper .div-shap1 {
+  background-image: url("../../assets/shap-2.png");
   height: 600px;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: right;
+} */
+.banner-content-inner-wrapper {
+  padding-top: 100px;
+}
+.hero_wrapper .div-shap1 {
+  width: 100%;
+  margin-left: -65px;
+  position: relative;
 }
 
 .hero_wrapper .div-hero-box {
-  background-image: url('../../assets/Union.svg');
-  height: 58%;
-  width: 100%;
-  background-size: contain;
-  background-repeat: no-repeat;
-  position: relative;
-  top: 18%;
-  display: flex;
-  justify-content: center;
+  background: #fff;
+  border-radius: 32px;
   flex-direction: column;
-  padding-left: 23%;
-  z-index: 1;
+  justify-content: center;
+  width: auto;
+  height: 100%;
+  padding: 50px 85px;
+  display: flex;
+  position: relative;
+  box-shadow: 0 11.6px 34.79px 1.16px #0003;
 }
+/* .hero_wrapper .div-hero-box:before {
+  content: "";
+  background-image: url("../../assets/massage-box-arrow-icon.svg");
+  width: 70px;
+  height: 111px;
+  position: absolute;
+  bottom: -15px;
+  left: -5px;
+  border-radius: 20px;
+  transform: rotate(90deg);
+} */
 
 .hero_wrapper .div-hero-box .hero-subtitle {
-  font-size: 40px;
+  font-size: 38px;
   font-family: var(--font-family);
   color: var(--balck-color);
-  margin: 0px !important;
+  margin: 0 0 8px;
+  line-height: 1;
 }
 
 .hero_wrapper .div-hero-box .hero-title {
-  font-size: 90px;
+  font-size: 81px;
   font-family: var(--font-family);
   color: var(--orange-color);
-  margin: 0px !important;
+  margin: 0 0 16px;
+  line-height: 1;
 }
 
 .hero-banner-img {
   position: relative;
   z-index: 1;
+  padding-top: 240px;
 }
 
 .hero-banner-img img {
   height: auto;
   width: 100%;
   max-width: 100%;
-  margin-top: 320px;
   object-fit: contain;
-  margin-left: 200px;
 }
 
-.bner-tilt {
+/* .bner-tilt {
   margin-left: 209px;
   margin-top: -40px;
+} */
+
+.bner-tilt {
+  margin-top: 70px;
 }
 
 .bner-tilt h3 {
@@ -85,7 +106,7 @@
 
 /* Button styles */
 .blue-btn {
-  background-color: #4361EE;
+  background-color: #4361ee;
   color: white;
   padding: 12px 24px;
   border: none;
@@ -99,16 +120,16 @@
 }
 
 .blue-btn:hover {
-  background-color: #3651DB;
+  background-color: #3651db;
   transform: translateY(-1px);
   box-shadow: 0 4px 8px rgba(67, 97, 238, 0.2);
 }
 
 .border-btn {
   background-color: white;
-  color: #FF8E25;
+  color: #ff8e25;
   padding: 12px 24px;
-  border: 1.5px solid #FF8E25;
+  border: 1.5px solid #ff8e25;
   border-radius: 25px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -121,13 +142,13 @@
 }
 
 .border-btn::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 0%;
   height: 100%;
-  background-color: #FF8E25;
+  background-color: #ff8e25;
   transition: all 0.3s ease;
   z-index: -1;
 }
@@ -140,13 +161,39 @@
   width: 100%;
 }
 
+.banner-left-img-sec {
+  width: 46%;
+}
+.banner-right-content-sec {
+  width: 54%;
+  padding-left: 0px !important;
+}
+.hero_wrapper .div-shap1 .hero-shap1 {
+  top: -50px;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+.hero_wrapper .div-shap1 .hero-shap1 img {
+  width: 390px;
+  max-width: unset;
+}
+.hero_wrapper .div-shap1 .hero-shap2 {
+  top: 50%;
+  right: -70px;
+  transform: translate(0%, -50%);
+  z-index: -1;
+}
+.hero_wrapper .div-shap1 .hero-shap2 img {
+  width: 350px;
+}
 /* Responsive styles */
 @media (max-width: 1400px) {
-  .hero-banner-img img {
+  /* .hero-banner-img img {
     height: 459px;
     width: auto;
     margin-top: 300px;
-  }
+  } */
 }
 
 @media (max-width: 1200px) {
@@ -181,7 +228,7 @@
   }
 
   .hero_wrapper .div-hero-box {
-    background-image: url('../../assets/Union-2.svg');
+    background-image: url("../../assets/Union-2.svg");
     position: static;
     width: 100%;
     height: auto;
@@ -239,7 +286,8 @@
     gap: 1rem !important;
   }
 
-  .blue-btn, .border-btn {
+  .blue-btn,
+  .border-btn {
     width: 100%;
     max-width: 200px;
   }
@@ -266,10 +314,9 @@
     margin: 10px auto;
   }
   .hero_wrapper .div-shap1 {
-    background-image: url('../../assets/shap-2.png');
+    background-image: url("../../assets/shap-2.png");
     height: 300px;
     width: 100%;
-    
   }
 
   .help-text {
@@ -316,7 +363,7 @@
   .d-lg-none {
     display: none;
   }
-  
+
   .d-lg-block {
     display: block;
   }
@@ -326,7 +373,7 @@
   .d-lg-none {
     display: block;
   }
-  
+
   .d-lg-block {
     display: none;
   }

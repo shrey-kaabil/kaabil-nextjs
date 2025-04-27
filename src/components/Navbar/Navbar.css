@@ -1,7 +1,6 @@
 .navbar {
   background-color: var(--them-color) !important;
   padding: 1rem 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .navbar-collapse {
@@ -24,7 +23,7 @@
 }
 
 .navbar .nav-item a::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 0;
   height: 2px;
@@ -74,7 +73,7 @@
 }
 
 .navbar-nav .nav-link {
-  color: #3063FD;
+  color: #3063fd;
   font-size: 18px;
   font-weight: 500;
   padding: 0.5rem 1rem;
@@ -90,7 +89,7 @@
   .navbar .nav-item {
     padding: 0 1.2rem;
   }
-  
+
   .navbar .nav-item a {
     font-size: 20px;
   }
@@ -100,7 +99,7 @@
   .navbar .nav-item {
     padding: 0 1rem;
   }
-  
+
   .navbar .navbar-nav {
     border-bottom: none;
   }
@@ -110,11 +109,11 @@
   .navbar .nav-item {
     padding: 10px 0;
   }
-  
+
   .navbar .nav-item a {
     font-size: 16px;
   }
-  
+
   .navbar .nav-btn {
     font-size: 16px;
     padding: 8px 25px;
@@ -140,11 +139,11 @@
   .navbar {
     padding: 0.5rem 0;
   }
-  
+
   .navbar .nav-item a {
     font-size: 20px;
   }
-  
+
   .navbar .nav-btn {
     font-size: 20px;
     padding: 5px 30px;
@@ -159,4 +158,4 @@
     font-size: 15px;
     padding: 0.5rem 0.5rem;
   }
-} 
+}
