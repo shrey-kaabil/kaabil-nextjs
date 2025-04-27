@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+
 .Solutions_wrapper {
   padding: 80px 0;
   position: relative;
@@ -11,10 +13,11 @@
 }
 
 .section-title_title h2 {
-  font-size: 34px;
-  font-weight: 700;
+  font-size: 60px;
+  font-weight: 600;
   color: #FF8E25;
   margin: 0;
+  font-family: 'Urbanist', sans-serif;
 }
 
 .work-maintab-section {
@@ -38,8 +41,8 @@
 }
 
 .tab_button {
-  font-size: 16px;
-  color: #666;
+  font-size: 24px;
+  color: #000000;
   padding: 8px 0;
   text-decoration: none;
   font-weight: 500;
@@ -48,6 +51,7 @@
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease;
+  font-family: 'Urbanist', sans-serif;
 }
 
 .tab_button.active {
@@ -76,6 +80,7 @@
   max-height: 600px;
   overflow-y: auto;
   border: 1px solid #FFE5D1;
+  font-family: 'Roboto', sans-serif;
 }
 
 .faq_item {
@@ -103,10 +108,11 @@
   margin: 0;
   font-size: 16px;
   font-weight: 500;
-  color: #333;
+  color: #000000;
   padding-right: 40px;
   transition: color 0.3s ease;
   line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
 }
 
 .faq_icon {
@@ -116,7 +122,7 @@
   width: 24px;
   height: 24px;
   transition: transform 0.3s ease;
-  color: #666;
+  color: #000000;
 }
 
 .faq_answer {
@@ -137,7 +143,8 @@
   margin: 0;
   font-size: 15px;
   line-height: 1.6;
-  color: #666;
+  color: #000000;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Footer Section */
@@ -149,7 +156,7 @@
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
-  padding: 20px;
+  /* padding: 20px; */
   background: #FFF9F5;
   border-radius: 16px;
 }
@@ -159,46 +166,63 @@
 }
 
 .faq_footer_text h3 {
-  font-size: 18px;
+  font-size: 24px;
   color: #333;
   margin: 0 0 4px 0;
   font-weight: 600;
   line-height: 1.4;
+  font-family: 'Urbanist', sans-serif;
 }
 
 .faq_footer_text p {
-  color: #666;
+  color: #333;
   margin: 0;
-  font-size: 14px;
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
 }
 
 .talk_button {
   background: #4169E1;
   color: white;
-  padding: 12px 20px;
-  border-radius: 8px;
+  padding: 12px 10px;
+  border-radius: 20px;
   text-decoration: none;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 20px;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   white-space: nowrap;
   border: none;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
+  font-family: 'Urbanist', sans-serif;
+  min-width: 280px;
+  box-shadow: 0 4px 15px rgba(65, 105, 225, 0.2);
 }
 
 .talk_button span {
   color: #FF8E25;
-  margin-left: 4px;
+  margin-left: 8px;
+  font-weight: 600;
 }
 
 .talk_button:hover {
   background: #3558c7;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(65, 105, 225, 0.25);
 }
 
 /* Responsive Styles */
 @media (max-width: 768px) {
+  .section-title_title h2 {
+    font-size: 24px;
+  }
+
+  .tab_button {
+    font-size: 18px;
+  }
+
   .faq_footer {
     flex-direction: column;
     text-align: center;

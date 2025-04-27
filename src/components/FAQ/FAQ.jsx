@@ -217,7 +217,7 @@ const FAQ = () => {
             </div>
             <Link href="https://kaabil.me/dashboard" target="_blank" rel="noopener noreferrer">
               <button className="talk_button">
-                Talk to your<span>Kaabil TA</span>
+               <h4> Talk to your <br/><span>Kaabil TA</span></h4>
               </button>
             </Link>
           </div>

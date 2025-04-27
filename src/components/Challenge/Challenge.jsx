@@ -117,10 +117,11 @@ const Challenge = () => {
                 variants={item}
                 custom={index}
                 whileHover={{
-                  x: -10,
+                  y: -5,
                   transition: { duration: 0.2 }
                 }}
               >
+                <h3 className="category-title">{content.title}</h3>
                 <div className="category-image">
                   <Image
                     src={[img1, img2, img3, img4][index]}
@@ -131,10 +132,12 @@ const Challenge = () => {
                     priority
                   />
                 </div>
-                <h3>{content.title}</h3>
                 <ul className="category-points">
                   {content.points.map((point, i) => (
-                    <li key={i}>{point}</li>
+                    <li key={i}>
+                      <span className="bullet">•</span>
+                      {point}
+                    </li>
                   ))}
                 </ul>
               </motion.div>
