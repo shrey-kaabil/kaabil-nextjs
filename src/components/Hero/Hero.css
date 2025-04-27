@@ -34,17 +34,17 @@
   position: relative;
   box-shadow: 0 11.6px 34.79px 1.16px #0003;
 }
-/* .hero_wrapper .div-hero-box:before {
+.hero_wrapper .div-hero-box:before {
   content: "";
-  background-image: url("../../assets/massage-box-arrow-icon.svg");
-  width: 70px;
-  height: 111px;
+  background-image: url("../../assets/box-arrow.svg");
+  background-position: center;
+  width: 200px;
+  height: 199px;
   position: absolute;
-  bottom: -15px;
-  left: -5px;
-  border-radius: 20px;
-  transform: rotate(90deg);
-} */
+  bottom: -91px;
+  left: -113px;
+  z-index: 1;
+}
 
 .hero_wrapper .div-hero-box .hero-subtitle {
   font-size: 38px;
@@ -88,11 +88,13 @@
   font-size: 24px;
   font-family: var(--font-family);
   color: var(--balck-color);
-  margin-bottom: 10px;
+  margin-bottom: 0px;
+  line-height: 1;
 }
 
 .bner-tilt span {
   color: var(--blue-color);
+  font-weight: 600;
 }
 
 .bner-tilt svg {
