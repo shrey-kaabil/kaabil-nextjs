@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Link from 'next/link';
 import './FAQ.css';
 
 const FAQ = () => {
@@ -192,17 +193,13 @@ const FAQ = () => {
                       viewBox="0 0 24 24" 
                       width="24" 
                       height="24" 
-                      fill="none" 
                       stroke="currentColor" 
                       strokeWidth="2" 
                       strokeLinecap="round" 
                       strokeLinejoin="round"
+                      fill="none"
                     >
-                      {activeIndex === index ? (
-                        <path d="M18 15l-6-6-6 6"/>
-                      ) : (
-                        <path d="M6 9l6 6 6-6"/>
-                      )}
+                      <polyline points={activeIndex === index ? "18 15 12 9 6 15" : "6 9 12 15 18 9"} />
                     </svg>
                   </span>
                 </div>
@@ -211,6 +208,18 @@ const FAQ = () => {
                 </div>
               </div>
             ))}
+          </div>
+
+          <div className="faq_footer">
+            <div className="faq_footer_text">
+              <h3>Become part of the first generation of AI-powered schools.</h3>
+              <p>Connect. Innovate. Lead.</p>
+            </div>
+            <Link href="https://kaabil.me/dashboard" target="_blank" rel="noopener noreferrer">
+              <button className="talk_button">
+                Talk to your<span>Kaabil TA</span>
+              </button>
+            </Link>
           </div>
         </div>
       </div>

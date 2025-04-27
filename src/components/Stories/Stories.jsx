@@ -13,30 +13,30 @@ const Stories = () => {
   const stories = [
     {
       id: 1,
-      name: 'Name',
-      designation: 'Designation',
-      content: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+      name: 'JEE Aspirant',
+      designation: 'Student',
+      content: "Kaabil.me points out exactly which concepts I'm weak in and guides my practice – now I know how to score better.",
       image: testImg,
     },
     {
       id: 2,
-      name: 'Name',
-      designation: 'Designation',
-      content: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+      name: 'Grade 7 Student',
+      designation: 'Student',
+      content: "I earn coins after each right answer and use them to talk to my AI Teacher – it keeps things fun and makes studying enjoyable.",
       image: testImg,
     },
     {
       id: 3,
-      name: 'Name',
-      designation: 'Designation',
-      content: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+      name: 'Coaching Teacher',
+      designation: 'Grade 9-12',
+      content: "Kaabil's homework generator saves me hours – I just select the chapter, tweak questions if needed, and share instantly via QR code.",
       image: testImg,
     },
     {
       id: 4,
-      name: 'Name',
-      designation: 'Designation',
-      content: "Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.",
+      name: 'Parent',
+      designation: 'Grade 9 Student',
+      content: "My son asks Kaabil's AI tutor for hints instead of answers, and I will be able to weekly updates on his strengths – it's like a personal reliable coach at home.",
       image: testImg,
     },
   ];
@@ -77,9 +77,9 @@ const Stories = () => {
                       />
                     </div>
                     <div className="story-text">
+                      <p className="story-description">{story.content}</p>
                       <h3 className="story-name">{story.name}</h3>
                       <p className="story-designation">{story.designation}</p>
-                      <p className="story-description">{story.content}</p>
                     </div>
                   </div>
                 </div>

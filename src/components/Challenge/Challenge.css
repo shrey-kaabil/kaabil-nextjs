@@ -58,46 +58,77 @@
 .category-item {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 30px 20px;
+  align-items: flex-start;
+  padding: 30px 25px;
   border-radius: 24px;
   background: white;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   border: 1px solid rgba(255, 142, 37, 0.1);
   will-change: transform, opacity;
   transform-origin: center;
   transform-style: preserve-3d;
   backface-visibility: hidden;
   position: relative;
+  height: 100%;
 }
 
 .category-item:hover {
-  transform: translateX(-10px) scale(1.03);
+  transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(255, 142, 37, 0.15);
-  z-index: 1;
 }
 
 .category-item h3 {
   font-size: 24px;
-  color: #333;
-  margin-top: 20px;
+  color: var(--orange-color);
+  margin: 0 0 20px 0;
   font-weight: 600;
+  align-self: flex-start;
 }
 
 .category-image {
   width: 100%;
-  height: auto;
+  height: 160px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .challenge-img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: contain;
-  transition: all 0.3s ease;
+}
+
+.category-points {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.category-points li {
+  position: relative;
+  padding-left: 24px;
+  margin-bottom: 12px;
+  color: #555;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.category-points li:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  width: 8px;
+  height: 8px;
+  background-color: var(--orange-color);
+  border-radius: 50%;
+}
+
+.category-points li:last-child {
+  margin-bottom: 0;
 }
 
 /* Disconnected Efforts Section */
@@ -195,6 +226,17 @@
   .category-item h3,
   .solution-text h3 {
     font-size: 20px;
+  }
+
+  .category-points li {
+    font-size: 14px;
+    padding-left: 20px;
+  }
+
+  .category-points li:before {
+    width: 6px;
+    height: 6px;
+    top: 7px;
   }
 }
 

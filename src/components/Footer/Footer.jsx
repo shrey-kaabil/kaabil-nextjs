@@ -140,9 +140,9 @@ const Footer = () => {
                   <h3>POLICY</h3>
                 </div>
                 <ul>
-                  <li><a href="#">Data Policy</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">AI Policy</a></li>
+                  <li><a href="/pdfs/Kaabil Data Policy.pdf" target="_blank" rel="noopener noreferrer">Data Policy</a></li>
+                  <li><a href="/pdfs/Kaabil Privacy Policy.pdf" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                  <li><a href="/pdfs/Kaabil AI Policy.pdf" target="_blank" rel="noopener noreferrer">AI Policy</a></li>
                 </ul>
               </div>
             </div>
@@ -153,9 +153,9 @@ const Footer = () => {
                   <h3>POLICY</h3>
                 </div>
                 <ul>
-                  <li><a href="#">Data Policy</a></li>
-                  <li><a href="#">Privacy Policy</a></li>
-                  <li><a href="#">AI Policy</a></li>
+                  <li><a href="/pdfs/Kaabil Data Policy.pdf" target="_blank" rel="noopener noreferrer">Data Policy</a></li>
+                  <li><a href="/pdfs/Kaabil Privacy Policy.pdf" target="_blank" rel="noopener noreferrer">Privacy Policy</a></li>
+                  <li><a href="/pdfs/Kaabil AI Policy.pdf" target="_blank" rel="noopener noreferrer">AI Policy</a></li>
                 </ul>
               </div>
             </div>

@@ -54,6 +54,41 @@ const Challenge = () => {
     },
   };
 
+  const cardContent = [
+    {
+      title: 'Learners',
+      points: [
+        'Struggle with self-doubt daily',
+        'Need clear custom lessons',
+        'Achievements to be counted'
+      ]
+    },
+    {
+      title: 'Parents',
+      points: [
+        'Limited time resources',
+        'Demand reliable support',
+        'Understand child progress consistently'
+      ]
+    },
+    {
+      title: 'Teachers',
+      points: [
+        'Overloaded with tasks daily',
+        'Require efficient teaching aids',
+        'Need actionable timely insights'
+      ]
+    },
+    {
+      title: 'Institutes',
+      points: [
+        'Demand streamlined processes',
+        'Require transparent performance metrics',
+        'Need for Immediate intervention'
+      ]
+    }
+  ];
+
   return (
     <>
       <section id="challenge" className="chllenging-lern" ref={ref}>
@@ -75,7 +110,7 @@ const Challenge = () => {
             viewport={{ once: false, amount: 0.1 }}
             variants={container}
           >
-            {[img1, img2, img3, img4].map((img, index) => (
+            {cardContent.map((content, index) => (
               <motion.div 
                 key={index}
                 className="category-item"
@@ -88,15 +123,20 @@ const Challenge = () => {
               >
                 <div className="category-image">
                   <Image
-                    src={img}
-                    alt={`${['Learners', 'Parents', 'Teachers', 'Institutes'][index]} illustration`}
+                    src={[img1, img2, img3, img4][index]}
+                    alt={`${content.title} illustration`}
                     width={280}
                     height={200}
                     className="challenge-img"
                     priority
                   />
                 </div>
-                <h3>{['Learners', 'Parents', 'Teachers', 'Institutes'][index]}</h3>
+                <h3>{content.title}</h3>
+                <ul className="category-points">
+                  {content.points.map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
               </motion.div>
             ))}
           </motion.div>
