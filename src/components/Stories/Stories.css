@@ -1,8 +1,7 @@
 /* Stories section styles */
 .stories_wrapper {
   position: relative;
-  padding: 80px 0;
-  background-color: #FFF9F3;
+  padding: 60px 0;
   overflow: hidden;
 }
 /* 
@@ -36,7 +35,7 @@
 
 .section-title_title {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .section-title_title h2 {
@@ -61,19 +60,17 @@
 
 /* Story card styles */
 .story-card {
-  background: #FFFFFF;
+  background: #ffffff;
   border-radius: 40px;
   padding: 50px 60px;
   margin: 20px 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.03);
   position: relative;
   overflow: hidden;
-  border: 2px solid #FFF;
+  border: 2px solid #fff;
   outline: 1px solid rgba(255, 142, 37, 0.2);
   outline-offset: -10px;
 }
-
-
 
 .story-card-content {
   display: flex;
@@ -91,7 +88,7 @@
   height: 120px !important;
   border-radius: 20px;
   object-fit: cover;
-  background: #F5F5F5;
+  background: #f5f5f5;
   border: 1px solid rgba(255, 142, 37, 0.2);
 }
 
@@ -150,6 +147,9 @@
   background: var(--orange-color) !important;
   transform: scale(1);
 }
+.stories_wrapper .section-title_title {
+  margin-bottom: 16px;
+}
 
 /* Responsive styles */
 @media (max-width: 1200px) {
@@ -157,7 +157,7 @@
     max-width: 90%;
     padding: 30px;
   }
-  
+
   .section-title_title h2 {
     font-size: 36px;
   }
@@ -279,4 +279,4 @@
     width: 10px;
     height: 10px;
   }
-} 
+}

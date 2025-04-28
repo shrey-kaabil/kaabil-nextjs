@@ -29,10 +29,12 @@
   justify-content: center;
   width: auto;
   height: 100%;
-  padding: 50px 85px;
+  padding: 50px 75px;
   display: flex;
   position: relative;
   box-shadow: 0 11.6px 34.79px 1.16px #0003;
+  z-index: 1;
+  min-height: 327px;
 }
 .hero_wrapper .div-hero-box:before {
   content: "";
@@ -47,7 +49,7 @@
 }
 
 .hero_wrapper .div-hero-box .hero-subtitle {
-  font-size: 38px;
+  font-size: 45px;
   font-family: var(--font-family);
   color: var(--balck-color);
   margin: 0 0 8px;
@@ -55,7 +57,7 @@
 }
 
 .hero_wrapper .div-hero-box .hero-title {
-  font-size: 81px;
+  font-size: 106px;
   font-family: var(--font-family);
   color: var(--orange-color);
   margin: 0 0 16px;
@@ -70,7 +72,6 @@
 
 .hero-banner-img img {
   height: auto;
-  width: 100%;
   max-width: 100%;
   object-fit: contain;
 }
@@ -81,11 +82,11 @@
 } */
 
 .bner-tilt {
-  margin-top: 70px;
+  margin-top: 104px;
 }
 
 .bner-tilt h3 {
-  font-size: 24px;
+  font-size: 32px;
   font-family: var(--font-family);
   color: var(--balck-color);
   margin-bottom: 0px;
@@ -108,17 +109,20 @@
 
 /* Button styles */
 .blue-btn {
+  color: #fff;
+  cursor: pointer;
   background-color: #4361ee;
-  color: white;
-  padding: 12px 24px;
   border: none;
   border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 16px;
+  min-width: 190px;
+  padding: 11px 15px;
+  font-size: 24px;
   font-weight: 500;
-  min-width: 120px;
-  box-shadow: 0 2px 4px rgba(67, 97, 238, 0.15);
+  width: auto;
+  height: auto;
+  line-height: normal;
+  transition: all 0.3s;
+  box-shadow: 0 2px 4px #4361ee26;
 }
 
 .blue-btn:hover {
@@ -128,18 +132,20 @@
 }
 
 .border-btn {
-  background-color: white;
   color: #ff8e25;
-  padding: 12px 24px;
+  cursor: pointer;
+  z-index: 1;
+  background-color: #fff;
   border: 1.5px solid #ff8e25;
   border-radius: 25px;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 16px;
+  min-width: 190px;
+  padding: 6px 15px;
+  font-size: 24px;
+  height: auto;
+  width: auto;
   font-weight: 500;
-  min-width: 120px;
+  transition: all 0.3s;
   position: relative;
-  z-index: 1;
   overflow: hidden;
 }
 
@@ -177,7 +183,7 @@
   transform: translate(-50%, 0%);
 }
 .hero_wrapper .div-shap1 .hero-shap1 img {
-  width: 390px;
+  width: 430px;
   max-width: unset;
 }
 .hero_wrapper .div-shap1 .hero-shap2 {
@@ -190,13 +196,6 @@
   width: 350px;
 }
 /* Responsive styles */
-@media (max-width: 1400px) {
-  /* .hero-banner-img img {
-    height: 459px;
-    width: auto;
-    margin-top: 300px;
-  } */
-}
 
 @media (max-width: 1200px) {
   .hero-banner-img img {
@@ -315,11 +314,6 @@
   .hero-banner-img img {
     margin: 10px auto;
   }
-  .hero_wrapper .div-shap1 {
-    background-image: url("../../assets/shap-2.png");
-    height: 300px;
-    width: 100%;
-  }
 
   .help-text {
     font-size: 20px;
@@ -409,4 +403,167 @@
 
 .arrow-icon:hover {
   transform: scale(1.1);
+}
+
+@media (min-width: 1400px) {
+  .banner-left-img-sec {
+    width: 53%;
+  }
+  .banner-right-content-sec {
+    width: 47%;
+  }
+  .hero-banner-img {
+    padding-top: 230px;
+  }
+  .hero_wrapper .div-shap1 {
+    width: calc(100% + 50px);
+    margin-left: -125px;
+  }
+  .hero_wrapper .div-hero-box {
+    border-radius: 62px;
+    padding: 60px 65px 60px 120px;
+  }
+  .hero_wrapper .div-hero-box .hero-subtitle {
+    font-size: 2.6vw;
+
+    margin: 0 0 12px;
+  }
+  .hero_wrapper .div-hero-box .hero-title {
+    font-size: 6.7vw;
+
+    margin: 0 0 22px;
+  }
+}
+
+@media (min-width: 1651px) {
+  .blue-btn {
+    border-radius: 50px;
+    min-width: 230px;
+    padding: 10px 15px;
+    font-size: 1.7vw;
+  }
+  .border-btn {
+    border-radius: 50px;
+    min-width: 230px;
+    height: auto;
+    padding: 10px 15px;
+    font-size: 1.7vw;
+  }
+  .hero-banner-img {
+    width: 100%;
+  }
+  .hero-banner-img img {
+    width: -webkit-fill-available;
+  }
+  .banner-left-img-sec {
+    width: 51%;
+  }
+  .banner-right-content-sec {
+    width: 49%;
+  }
+  .hero_wrapper .div-hero-box {
+    min-height: 406px;
+  }
+  .bner-tilt h3 {
+    font-size: 2.5vw;
+  }
+  .hero_wrapper .div-shap1 .hero-shap1 img {
+    width: 520px;
+  }
+  .bner-tilt {
+    margin-top: 134px;
+  }
+}
+
+@media (max-width: 767px) {
+  .banner-left-img-sec {
+    width: 100%;
+  }
+  .banner-right-content-sec {
+    width: 101%;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+  .hero_wrapper .div-shap1 {
+    margin-left: 0;
+  }
+  .banner-content-inner-wrapper {
+    padding-top: 0px;
+  }
+  .hero_wrapper .div-hero-box {
+    z-index: 1;
+    align-items: flex-start;
+    flex-direction: column;
+    width: auto;
+    height: 100%;
+    background: url("../../assets/hero-bgimage-mweb.svg");
+    background-size: 100%;
+    padding: 40px 35px 70px 35px;
+    display: flex;
+    position: relative;
+    box-shadow: none;
+    max-width: 415px;
+    margin: 0 auto;
+    min-height: unset;
+    height: 300px;
+    width: 100%;
+  }
+  .hero_wrapper .div-hero-box:before {
+    display: none;
+  }
+  .hero_wrapper .div-shap1 .hero-shap1 {
+    top: -45px;
+    left: 31%;
+  }
+  .hero_wrapper .div-shap1 .hero-shap1 img {
+    width: 304px;
+  }
+  .hero_wrapper .div-shap1 .hero-shap2 {
+    top: 28%;
+    right: -50px;
+  }
+  .hero_wrapper .div-shap1 .hero-shap2 img {
+    width: 282px;
+  }
+  .hero_wrapper .div-hero-box .hero-subtitle {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .hero_wrapper .div-hero-box .hero-title {
+    font-size: 58px;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+  .hero_wrapper .div-hero-box .hero-box-action-btn {
+    gap: 15px !important;
+  }
+  .blue-btn {
+    min-width: 140px;
+    padding: 6px 12px;
+    font-size: 20px;
+  }
+  .border-btn {
+    min-width: 140px;
+    padding: 3px 12px;
+    font-size: 20px;
+  }
+  .hero-banner-img img {
+    margin: 0px auto;
+  }
+  .hero-banner-img {
+    padding-top: 0;
+    margin-top: -15px;
+  }
+  .bner-tilt {
+    text-align: left;
+    margin: 20px auto 0px;
+    max-width: 90%;
+  }
+  .bner-tilt svg {
+    max-width: 40px;
+    height: auto;
+  }
+  .bner-tilt h3 {
+    font-size: 24px;
+  }
 }

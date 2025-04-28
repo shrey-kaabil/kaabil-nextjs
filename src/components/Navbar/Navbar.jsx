@@ -1,9 +1,9 @@
-'use client';
-import React from 'react';
-import Link from 'next/link';
-import Image from 'next/image';
-import './Navbar.css';
-import logo from '../../assets/logo.png';
+"use client";
+import React from "react";
+import Link from "next/link";
+import Image from "next/image";
+import "./Navbar.css";
+import logo from "../../assets/logo.png";
 
 const Navbar = () => {
   const scrollToSection = (sectionId) => {
@@ -15,18 +15,18 @@ const Navbar = () => {
 
       window.scrollTo({
         top: offsetPosition,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
   };
 
   return (
     <nav className="navbar navbar-expand-lg">
-      <div className="container-fluid">
+      <div className="container">
         <Link className="navbar-brand" href="/">
-          <Image 
+          <Image
             src={logo}
-            alt="Kaabil Logo" 
+            alt="Kaabil Logo"
             width={160}
             height={60}
             className="img-fluid"
@@ -34,16 +34,22 @@ const Navbar = () => {
           />
         </Link>
         <div className="d-lg-none d-block ms-auto" role="search">
-          <Link href="https://kaabil.me/dashboard" target="_blank" rel="noopener noreferrer">
-            <button className="btn nav-btn" type="submit">Use The App</button>
+          <Link
+            href="https://kaabil.me/dashboard"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="btn nav-btn" type="submit">
+              Use The App
+            </button>
           </Link>
         </div>
-        <button 
-          className="navbar-toggler ms-5" 
-          type="button" 
+        <button
+          className="navbar-toggler ms-5"
+          type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" 
-          aria-controls="navbarSupportedContent" 
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
@@ -52,27 +58,63 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 text-center">
             <li className="nav-item">
-              <button className="nav-link" onClick={() => scrollToSection('hero')}>Home</button>
+              <button
+                className="nav-link"
+                onClick={() => scrollToSection("hero")}
+              >
+                Home
+              </button>
             </li>
             <li className="nav-item">
-              <button className="nav-link" onClick={() => scrollToSection('solutions')}>Solutions</button>
+              <button
+                className="nav-link"
+                onClick={() => scrollToSection("solutions")}
+              >
+                Solutions
+              </button>
             </li>
             <li className="nav-item">
-              <button className="nav-link" onClick={() => scrollToSection('stories')}>Stories</button>
+              <button
+                className="nav-link"
+                onClick={() => scrollToSection("stories")}
+              >
+                Stories
+              </button>
             </li>
             <li className="nav-item">
-              <button className="nav-link" onClick={() => scrollToSection('challenge')}>Purpose</button>
+              <button
+                className="nav-link"
+                onClick={() => scrollToSection("challenge")}
+              >
+                Purpose
+              </button>
             </li>
             <li className="nav-item">
-              <button className="nav-link" onClick={() => scrollToSection('faq')}>For You</button>
+              <button
+                className="nav-link"
+                onClick={() => scrollToSection("faq")}
+              >
+                For You
+              </button>
             </li>
             <li className="nav-item">
-              <button className="nav-link" onClick={() => scrollToSection('launching')}>AI-Schools</button>
+              <button
+                className="nav-link"
+                onClick={() => scrollToSection("launching")}
+              >
+                AI-Schools
+              </button>
             </li>
           </ul>
           <div className="d-flex ms-auto justify-content-center" role="search">
-            <Link href="https://kaabil.me/dashboard" target="_blank" rel="noopener noreferrer">
-              <button className="btn nav-btn" type="submit">Use The App</button>
+            <Link
+              href="https://kaabil.me/dashboard"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="btn nav-btn" type="submit">
+                Use The App
+              </button>
             </Link>
           </div>
         </div>
@@ -81,4 +123,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;

@@ -1,8 +1,7 @@
 /* Join section styles */
 .join_wrapper {
   margin-top: 0;
-  padding: 80px 20px;
-  background: linear-gradient(180deg, #FFF9F3 0%, #FFFFFF 100%);
+  padding: 60px 20px;
   position: relative;
   overflow: hidden;
 }
@@ -13,7 +12,7 @@
 }
 
 .section-title_title h2 {
-  color: #FF8E25;
+  color: #ff8e25;
   font-size: 36px;
   font-weight: 700;
   margin: 0;
@@ -90,4 +89,4 @@
     font-size: 20px;
     bottom: 10px;
   }
-} 
+}

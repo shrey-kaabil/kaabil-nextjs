@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap");
 
 /* Challenge Learn Section */
 .chllenging-lern {
@@ -10,10 +10,6 @@
   position: relative;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
 .chllenging-lern::before {
   content: "";
   position: absolute;
@@ -32,15 +28,15 @@
 
 .section-title_title {
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .section-title_title h2 {
   font-size: 60px;
   font-weight: 600;
-  color: #FF8E25;
+  color: #ff8e25;
   margin: 0;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
   letter-spacing: 1px;
   line-height: 1.2;
 }
@@ -70,7 +66,7 @@
   color: #333333;
   margin: 0 0 24px 0;
   font-weight: 600;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 .category-image {
@@ -101,16 +97,15 @@
   display: flex;
   align-items: flex-start;
   line-height: 1.5;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .bullet {
-  color: #FF8E25;
+  color: #ff8e25;
   margin-right: 8px;
   font-size: 20px;
   line-height: 1;
-    font-family: 'Roboto', sans-serif;
-
+  font-family: "Roboto", sans-serif;
 }
 
 /* Disconnected Efforts Section */
@@ -123,9 +118,9 @@
 .disconnected-efforts .section-title_title h2 {
   font-size: 36px;
   font-weight: 600;
-  color: #FF8E25;
+  color: #ff8e25;
   margin: 0;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
   line-height: 1.2;
 }
 
@@ -163,7 +158,7 @@
   color: #000000;
   margin: 0;
   font-weight: 700;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
   line-height: 1.4;
 }
 
@@ -247,5 +242,4 @@
 /* Ensure smooth scrolling behavior */
 html {
   scroll-behavior: smooth;
-}
 }

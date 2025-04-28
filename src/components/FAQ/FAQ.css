@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap");
 
 .Solutions_wrapper {
   padding: 80px 0;
@@ -16,17 +16,11 @@
   font-weight: 700;
   color: #ff8e25;
   margin: 0;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 .work-maintab-section {
   position: relative;
-}
-
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
 }
 
 /* Tab Navigation */
@@ -50,7 +44,7 @@
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 .tab_button.active {
@@ -78,8 +72,8 @@
   margin: 0 auto;
   max-height: 600px;
   overflow-y: auto;
-  border: 1px solid #FFE5D1;
-  font-family: 'Roboto', sans-serif;
+  border: 1px solid #ffe5d1;
+  font-family: "Roboto", sans-serif;
 }
 
 .faq_item {
@@ -111,7 +105,7 @@
   padding-right: 40px;
   transition: color 0.3s ease;
   line-height: 1.5;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .faq_icon {
@@ -143,7 +137,7 @@
   font-size: 15px;
   line-height: 1.6;
   color: #000000;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 /* Footer Section */
@@ -170,14 +164,14 @@
   margin: 0 0 4px 0;
   font-weight: 600;
   line-height: 1.4;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
 }
 
 .faq_footer_text p {
   color: #333;
   margin: 0;
   font-size: 18px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .talk_button {
@@ -195,13 +189,13 @@
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
-  font-family: 'Urbanist', sans-serif;
+  font-family: "Urbanist", sans-serif;
   min-width: 280px;
   box-shadow: 0 4px 15px rgba(65, 105, 225, 0.2);
 }
 
 .talk_button span {
-  color: #FF8E25;
+  color: #ff8e25;
   margin-left: 8px;
   font-weight: 600;
 }

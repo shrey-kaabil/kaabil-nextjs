@@ -71,7 +71,7 @@ const Hero = () => {
                     <>
                       <p className="hero-subtitle">First Generation</p>
                       <h1 className="hero-title">Kaabil TAs</h1>
-                      <div className="d-flex gap-2">
+                      <div className="d-flex gap-4 hero-box-action-btn">
                         <button className="blue-btn" onClick={toggleContent}>
                           Meet Us
                         </button>
@@ -87,7 +87,7 @@ const Hero = () => {
                       </p>
                       {/* <h1 className="hero-title">Kaabil TAs</h1> */}
                       <div
-                        className="d-flex gap-2"
+                        className="d-flex gap-3 hero-box-action-btn"
                         style={{ marginTop: "20px" }}
                       >
                         <button className="blue-btn" onClick={toggleContent}>
