@@ -22,24 +22,40 @@ const Join = () => {
       <div className="container-fluid">
         <div className="row">
           <div className="section-title_title">
-            <h2>Join us in the new way of learning</h2>
+            <h2>Join a new way to learn</h2>
           </div>
         </div>
         <div className="row">
-          {items.map((item) => (
-            <div key={item.id} className="col-lg-3 col-md-6 col-sm-12 mt-4">
-              <div className="join-item">
-                <Image
-                  src={item.image}
-                  alt={item.title}
-                  width={300}
-                  height={238}
-                  className="join-image"    
-                />
-                {/* <p className="join-text">{item.title}</p> */}
+          <div className="desktop-view d-none d-md-flex gap-4">
+            {items.map((item) => (
+              <div key={item.id} className="col-lg-3 col-md-6 mt-4">
+                <div className="join-item">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={300}
+                    height={238}
+                    className="join-image"    
+                  />
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+          <div className="mobile-scroll-container d-md-none">
+            {items.map((item) => (
+              <div key={item.id} className="mobile-scroll-item">
+                <div className="join-item">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={300}
+                    height={238}
+                    className="join-image"    
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -125,8 +125,10 @@ const Solutions = () => {
                 key={tab.id}
                 className={`tab-pane ${activeTab === index ? "active" : ""}`}
               >
+
                 <div className={`content-card bg-${tab.bgColor}`}>
                   <div className="tab-wrapper-section">
+
                     <div className="text-content">
                       <h3>{tab.content.text.title}</h3>
                       <ul>

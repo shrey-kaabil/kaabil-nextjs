@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap");
 
 .Solutions_wrapper {
-  padding: 80px 0;
+  padding: 60px 0;
   position: relative;
   overflow: hidden;
 }
@@ -12,31 +12,33 @@
 }
 
 .section-title_title h2 {
-  font-size: 34px;
-  font-weight: 700;
   color: #ff8e25;
+  font-size: 36px;
+  font-weight: 700;
   margin: 0;
   font-family: "Urbanist", sans-serif;
 }
 
 .work-maintab-section {
   position: relative;
+  max-width: 1040px;
+  margin: 0 auto;
 }
 
 /* Tab Navigation */
 .faq_tabs {
   display: flex;
-  gap: 40px;
+  gap: 30px;
   justify-content: center;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 40px;
+  border: none;
   padding-bottom: 15px;
 }
 
 .tab_button {
-  font-size: 24px;
-  color: #000000;
-  padding: 8px 0;
+  font-size: 20px;
+  color: #333;
+  padding: 10px 0;
   text-decoration: none;
   font-weight: 500;
   background: none;
@@ -44,43 +46,37 @@
   cursor: pointer;
   position: relative;
   transition: all 0.3s ease;
+  opacity: 0.7;
   font-family: "Urbanist", sans-serif;
 }
 
-.tab_button.active {
-  color: #4169e1;
-  font-weight: 600;
+.tab_button:hover {
+  opacity: 1;
 }
 
-.tab_button.active::after {
-  content: "";
-  position: absolute;
-  bottom: -16px;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #4169e1;
+.tab_button.active {
+  color: #333;
+  font-weight: 600;
+  opacity: 1;
 }
 
 /* FAQ Content Area */
 .faq_list {
-  background: #fff;
-  padding: 20px;
-  border-radius: 25px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-  max-width: 900px;
+  padding: 24px;
+  border-radius: 56px;
+  border: 2px solid rgba(73, 144, 226, 0.3);
+  backdrop-filter: blur(200px);
+  background: rgba(255, 255, 255, 0.5);
+  max-width: 100%;
   margin: 0 auto;
   max-height: 600px;
   overflow-y: auto;
-  border: 1px solid #ffe5d1;
-  font-family: "Roboto", sans-serif;
 }
 
 .faq_item {
-  border-bottom: 1px solid #ffe5d1;
+  border-bottom: 1px solid rgba(73, 144, 226, 0.1);
   margin-bottom: 15px;
   transition: all 0.3s ease;
-  background: #fff;
 }
 
 .faq_item:last-child {
@@ -146,22 +142,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 20px;
-  background: #fff9f5;
-  border-radius: 16px;
+  padding: 24px;
+  border-radius: 56px;
+  border: 2px solid rgba(73, 144, 226, 0.3);
+  backdrop-filter: blur(200px);
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
 }
 
 .faq_footer_text {
-  text-align: left;
+  text-align: center;
 }
 
 .faq_footer_text h3 {
   font-size: 24px;
   color: #333;
-  margin: 0 0 4px 0;
+  margin: 0 0 8px 0;
   font-weight: 600;
   line-height: 1.4;
   font-family: "Urbanist", sans-serif;
@@ -175,67 +171,141 @@
 }
 
 .talk_button {
-  background: #4169e1;
+  background: #4169E1;
   color: white;
-  padding: 12px 10px;
-  border-radius: 20px;
+  padding: 16px 32px;
+  border-radius: 100px;
   text-decoration: none;
   font-weight: 500;
-  font-size: 20px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  white-space: nowrap;
+  font-size: 16px;
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: "Urbanist", sans-serif;
-  min-width: 280px;
-  box-shadow: 0 4px 15px rgba(65, 105, 225, 0.2);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.talk_button h4 {
+  margin: 0;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.4;
 }
 
 .talk_button span {
-  color: #ff8e25;
-  margin-left: 8px;
+  color: #FF8E25;
   font-weight: 600;
 }
 
-.talk_button:hover {
-  background: #3558c7;
-  transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(65, 105, 225, 0.25);
+/* Responsive Styles */
+@media (max-width: 991px) {
+  .work-maintab-section {
+    padding: 0 20px;
+  }
+
+  .faq_list,
+  .faq_footer {
+    padding: 30px;
+    border-radius: 32px;
+  }
 }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .Solutions_wrapper {
+    padding: 30px 0;
+  }
+
+  .section-title_title {
+    margin-bottom: 30px;
+  }
+
   .section-title_title h2 {
-    font-size: 24px;
+    font-size: 28px;
+  }
+
+  .faq_tabs {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 20px;
+    padding: 10px 15px;
+    margin: 0 -15px 25px;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .faq_tabs::-webkit-scrollbar {
+    display: none;
   }
 
   .tab_button {
-    font-size: 18px;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+
+  .faq_list,
+  .faq_footer {
+    padding: 20px;
+    border-radius: 20px;
   }
 
   .faq_footer {
     flex-direction: column;
-    text-align: center;
-    gap: 16px;
-    padding: 16px;
+    gap: 24px;
+    padding: 32px 24px;
+    margin: 32px 16px;
+    border-radius: 24px;
+    background: #FFFFFF;
   }
 
   .faq_footer_text {
     text-align: center;
   }
 
-  .faq_tabs {
-    gap: 20px;
-    overflow-x: auto;
-    justify-content: flex-start;
-    padding-bottom: 15px;
+  .faq_footer_text h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+    color: #1A1A1A;
   }
 
-  .tab_button {
+  .faq_footer_text p {
+    font-size: 16px;
+    color: #666666;
+  }
+
+  .talk_button {
+    width: 100%;
+    padding: 12px 24px;
+    background: #4169E1;
+    border-radius: 16px;
+  }
+
+  .talk_button h4 {
     font-size: 14px;
-    white-space: nowrap;
+    line-height: 1.5;
+  }
+
+  .talk_button span {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 575px) {
+  .Solutions_wrapper {
+    padding: 20px 0;
+  }
+
+  .faq_list,
+  .faq_footer {
+    padding: 16px;
+    margin: 0 10px;
+  }
+
+  .faq_footer {
+    padding: 24px 16px;
+    margin: 24px 12px;
   }
 }

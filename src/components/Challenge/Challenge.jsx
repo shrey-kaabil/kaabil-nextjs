@@ -3,10 +3,10 @@ import React from 'react';
 import Image from 'next/image';
 import { motion, useInView } from 'framer-motion';
 import './Challenge.css';
-import img1 from '../../assets/Img1.png';
-import img2 from '../../assets/Img2.png';
-import img3 from '../../assets/Img3.png';
-import img4 from '../../assets/Img4.png';
+import img4 from '../../assets/img11.svg';
+import img3 from '../../assets/img12.svg';
+import img2 from '../../assets/img13.svg';
+import img1 from '../../assets/img14.svg';
 
 const Challenge = () => {
   const ref = React.useRef(null);
