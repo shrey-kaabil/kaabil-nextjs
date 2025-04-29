@@ -238,20 +238,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 24px;
-  height: 24px;
   transition: transform 0.3s ease;
-}
-
-.footer_wrapper .footer-icon .icon a img {
-  width: 24px !important;
-  height: 24px !important;
-  object-fit: contain;
 }
 
 .footer_wrapper .footer-icon .icon a:hover {
   transform: translateY(-3px);
 }
+
+
 
 /* Email Subscription Section */
 .footer_wrapper .f-text2 {

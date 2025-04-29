@@ -34,20 +34,20 @@ const Footer = () => {
               <div className="footer-icon">
                 <p className="f-text1">© 2025</p>
                 <div className="icon">
-                <a href="https://www.youtube.com/@Kaabilme/" target="_blank" rel="noopener noreferrer">
-                    <Image src={youtube} alt="youtube" width={26} height={26} />
+                  <a href="https://www.youtube.com/@Kaabilme/" target="_blank" rel="noopener noreferrer">
+                    <Image src={youtube} alt="youtube" width={32} height={32} />
                   </a>
                   <a href="https://www.linkedin.com/company/kaabilme/" target="_blank" rel="noopener noreferrer">
-                    <Image src={linkedin} alt="LinkedIn" width={24} height={24} />
+                    <Image src={linkedin} alt="LinkedIn" width={32} height={32} />
                   </a>
                   <a href="https://www.instagram.com/kaabil.me?igsh=MTAzdmc2N2h0MWNraw==" target="_blank" rel="noopener noreferrer">
-                    <Image src={instagram} alt="Instagram" width={24} height={24} />
+                    <Image src={instagram} alt="Instagram" width={32} height={32} />
                   </a>
                   <a href="https://x.com/kaabilme?s=21" target="_blank" rel="noopener noreferrer">
-                    <Image src={xLogo} alt="X (Twitter)" width={24} height={24} />
+                    <Image src={xLogo} alt="X (Twitter)" width={32} height={32} />
                   </a>
                   <a href="https://www.reddit.com/r/kaabilme/s/O8vqTExQKJ" target="_blank" rel="noopener noreferrer">
-                    <Image src={icon3} alt="Reddit" width={24} height={24} />
+                    <Image src={icon3} alt="Reddit" width={32} height={32} />
                   </a>
                 </div>
               </div>

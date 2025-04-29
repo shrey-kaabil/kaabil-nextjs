@@ -149,7 +149,7 @@ const Challenge = () => {
       <section className="disconnected-efforts">
         <div className="container">
           <div className="diss-effort">
-            <div className="section-title_title">
+            <div className=" diss-effort section-title_title">
               <h2>Kaabil.me Brings These Disconnected Efforts Together</h2>
             </div>
             <div className="solutions-wrapper">
