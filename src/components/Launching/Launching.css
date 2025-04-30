@@ -286,7 +286,7 @@
 
 @media (max-width: 767px) {
   .launching-program-beta {
-    padding: 0px;
+    padding: 20px 0;
   }
   .section-title h2 {
     font-size: 29px;

@@ -1,7 +1,11 @@
-'use client';
-import React, { useState } from 'react';
-import Link from 'next/link';
-import './FAQ.css';
+"use client";
+import React, { useState } from "react";
+import Link from "next/link";
+import "./FAQ.css";
+import Image from "next/image";
+import ShapImage1 from "../../assets/faq-shap1.svg";
+import ShapImage2 from "../../assets/faq-shap2.svg";
+import ShapImage3 from "../../assets/faq-shap3.svg";
 
 const FAQ = () => {
   const [activeTab, setActiveTab] = useState(0);
@@ -13,142 +17,173 @@ const FAQ = () => {
       faqs: [
         {
           question: "Does Kaabil Teacher affect my device's performance?",
-          answer: "Kaabil TA is engineered for efficiency—designed to use minimal battery power and data."
+          answer:
+            "Kaabil TA is engineered for efficiency—designed to use minimal battery power and data.",
         },
         {
           question: "How often is Kaabil TA updated?",
-          answer: "We continually improve and train our AI with regular updates, ensuring it stays smart and responsive and responsible."
+          answer:
+            "We continually improve and train our AI with regular updates, ensuring it stays smart and responsive and responsible.",
         },
         {
           question: "How does Kaabil TA adapt to individual learning needs?",
-          answer: "It personalizes learning by identifying gaps and curating personal guidance tips for each student."
+          answer:
+            "It personalizes learning by identifying gaps and curating personal guidance tips for each student.",
         },
         {
           question: "Is my personal information safe with Kaabil TA?",
-          answer: "Your privacy is our top priority—strong security measures are adopted to keep your data secure."
+          answer:
+            "Your privacy is our top priority—strong security measures are adopted to keep your data secure.",
         },
         {
           question: "What teaching principles guide Kaabil TA?",
-          answer: "Our approach is inspired by proven methods like Bloom's Mastery Learning and Universal Design for Learning to support every learner."
-        }
-      ]
+          answer:
+            "Our approach is inspired by proven methods like Bloom's Mastery Learning and Universal Design for Learning to support every learner.",
+        },
+      ],
     },
     {
       title: "Learners",
       faqs: [
         {
           question: "What kind of help will KaabilTeacher provide me?",
-          answer: "Instant help, step-by-step guidance, and practice tailored just for you."
+          answer:
+            "Instant help, step-by-step guidance, and practice tailored just for you.",
         },
         {
           question: "How will Kaabil help me stay focused while studying?",
-          answer: "Smart study plans, bite-sized lesson pathways, and a safe space to build critical thinking."
+          answer:
+            "Smart study plans, bite-sized lesson pathways, and a safe space to build critical thinking.",
         },
         {
           question: "Why can't I use other AI tools?",
-          answer: "Because you shouldn't waste time prompting for answers. Kaabil is not a system where you search for answers—it adapts to your needs, instantly."
+          answer:
+            "Because you shouldn't waste time prompting for answers. Kaabil is not a system where you search for answers—it adapts to your needs, instantly.",
         },
         {
           question: "How will Kaabil keep me motivated to learn?",
-          answer: "Clear progress, small wins, and challenges that excite you and grow with you."
+          answer:
+            "Clear progress, small wins, and challenges that excite you and grow with you.",
         },
         {
           question: "Why do I need interactive learning for me?",
-          answer: "Modern problems need modern solutions. A two-way learning space keeps knowledge in your active memory. Just 15 minutes twice a day on Kaabil will keep you ahead."
+          answer:
+            "Modern problems need modern solutions. A two-way learning space keeps knowledge in your active memory. Just 15 minutes twice a day on Kaabil will keep you ahead.",
         },
         {
           question: "What if I forget what I have been learning?",
-          answer: "Kaabil gives you a list of recommendations and quick revision tips to help you catch up with all gray areas effortlessly."
-        }
-      ]
+          answer:
+            "Kaabil gives you a list of recommendations and quick revision tips to help you catch up with all gray areas effortlessly.",
+        },
+      ],
     },
     {
       title: "Parents",
       faqs: [
         {
           question: "How do I ensure my child's screen time is productive?",
-          answer: "Every session is structured, interactive, and goal-oriented with real-time insights."
+          answer:
+            "Every session is structured, interactive, and goal-oriented with real-time insights.",
         },
         {
           question: "How does Kaabil Teacher prepare my child for exams?",
-          answer: "Targeted revision, practice tests, and personalized recommendations make exam prep stress-free."
+          answer:
+            "Targeted revision, practice tests, and personalized recommendations make exam prep stress-free.",
         },
         {
           question: "How does Kaabil balance learning and practice?",
-          answer: "Kaabil's AI smartly picks up urgent learning gaps while maintaining a structured mix of lessons, revision, and problem-solving."
+          answer:
+            "Kaabil's AI smartly picks up urgent learning gaps while maintaining a structured mix of lessons, revision, and problem-solving.",
         },
         {
           question: "What if my child falls behind?",
-          answer: "Kaabil detects learning gaps and automatically provides extra support before they fall behind."
+          answer:
+            "Kaabil detects learning gaps and automatically provides extra support before they fall behind.",
         },
         {
           question: "Can Kaabil Teacher support my child's school curriculum?",
-          answer: "Yes! Kaabil covers CBSE, ICSE, state boards, and multiple languages with syllabus-aligned tests and practice modules."
-        }
-      ]
+          answer:
+            "Yes! Kaabil covers CBSE, ICSE, state boards, and multiple languages with syllabus-aligned tests and practice modules.",
+        },
+      ],
     },
     {
       title: "Institutes",
       faqs: [
         {
           question: "Why shift to Kaabil?",
-          answer: "It unifies teachers, students, and parents in one ecosystem."
+          answer:
+            "It unifies teachers, students, and parents in one ecosystem.",
         },
         {
           question: "Who can use Kaabil?",
-          answer: "Schools, coaching centers, personal tutors, and online educators."
+          answer:
+            "Schools, coaching centers, personal tutors, and online educators.",
         },
         {
-          question: "How do I scale Kaabil across multiple campuses or departments?",
-          answer: "Kaabil is built to be scalable, allowing you to manage multiple classrooms, campuses, or departments from a single admin dashboard."
+          question:
+            "How do I scale Kaabil across multiple campuses or departments?",
+          answer:
+            "Kaabil is built to be scalable, allowing you to manage multiple classrooms, campuses, or departments from a single admin dashboard.",
         },
         {
           question: "What insights can administrators get from Kaabil?",
-          answer: "Our analytics provide a bird's-eye view of overall performance, identify trends, and offer predictive data for resource allocation and policy decisions."
+          answer:
+            "Our analytics provide a bird's-eye view of overall performance, identify trends, and offer predictive data for resource allocation and policy decisions.",
         },
         {
           question: "How do I onboard teachers and students on Kaabil?",
-          answer: "We provide quick sign-up, dedicated support, guided tutorials, and onboarding sessions to streamline the transition, ensuring minimal disruption to your current workflow."
+          answer:
+            "We provide quick sign-up, dedicated support, guided tutorials, and onboarding sessions to streamline the transition, ensuring minimal disruption to your current workflow.",
         },
         {
-          question: "Is Kaabil customizable for different curricula or standards?",
-          answer: "Kaabil's course creation tools fit various educational standards and syllabi, and support multiple languages!"
+          question:
+            "Is Kaabil customizable for different curricula or standards?",
+          answer:
+            "Kaabil's course creation tools fit various educational standards and syllabi, and support multiple languages!",
         },
         {
           question: "How does Kaabil improve student outcomes?",
-          answer: "AI-driven recommendations, targeted practice, and structured-tailored revision practice sets help every student progress effectively."
-        }
-      ]
+          answer:
+            "AI-driven recommendations, targeted practice, and structured-tailored revision practice sets help every student progress effectively.",
+        },
+      ],
     },
     {
       title: "Teachers",
       faqs: [
         {
           question: "Can I create tests and share my own questions on Kaabil?",
-          answer: "Yes! You can upload, customize, and share different MCQ or subjective questions, to different students, based on each learner's requirements."
+          answer:
+            "Yes! You can upload, customize, and share different MCQ or subjective questions, to different students, based on each learner's requirements.",
         },
         {
           question: "Are my courses and teaching materials secure on Kaabil?",
-          answer: "Yes! Your content stays private and secure—Kaabil does not access, modify, or share it."
+          answer:
+            "Yes! Your content stays private and secure—Kaabil does not access, modify, or share it.",
         },
         {
           question: "What courses and exams is Kaabil suitable for?",
-          answer: "Kaabil supports CBSE, ICSE, state boards, and all major curricula, along with competitive exams like JEE, NEET, UPSC, CAT, and Olympiads."
+          answer:
+            "Kaabil supports CBSE, ICSE, state boards, and all major curricula, along with competitive exams like JEE, NEET, UPSC, CAT, and Olympiads.",
         },
         {
           question: "Can Kaabil help me identify struggling students quickly?",
-          answer: "Yes, Kaabil provides real-time insights into each student's strengths and limitations."
+          answer:
+            "Yes, Kaabil provides real-time insights into each student's strengths and limitations.",
         },
         {
           question: "Does Kaabil provide instant feedback?",
-          answer: "Objective questions are auto-graded, and Subjective Answers are evaluated with AI-assisted insights."
+          answer:
+            "Objective questions are auto-graded, and Subjective Answers are evaluated with AI-assisted insights.",
         },
         {
           question: "Will Kaabil Teachers replace my role as a teacher?",
-          answer: "Can't. Kaabil is here to automate repetitive tasks (like grading), so you can focus on creating personal connections."
-        }
-      ]
-    }
+          answer:
+            "Can't. Kaabil is here to automate repetitive tasks (like grading), so you can focus on creating personal connections.",
+        },
+      ],
+    },
   ];
 
   const toggleAccordion = (index) => {
@@ -158,18 +193,15 @@ const FAQ = () => {
   return (
     <section id="faq" className="Solutions_wrapper">
       <div className="container">
-        <div className="section-title_title">
-          <h2>How It Works for You?</h2>
-        </div>
-      </div>
-      
-      <div className="work-maintab-section">
-        <div className="container">
+        <div className="work-maintab-section">
+          <div className="section-title_title">
+            <h2>How It Works for You?</h2>
+          </div>
           <div className="faq_tabs">
             {tabsData.map((tab, index) => (
               <button
                 key={index}
-                className={`tab_button ${activeTab === index ? 'active' : ''}`}
+                className={`tab_button ${activeTab === index ? "active" : ""}`}
                 onClick={() => setActiveTab(index)}
               >
                 {tab.title}
@@ -178,53 +210,107 @@ const FAQ = () => {
           </div>
 
           <div className="faq_list">
-            {tabsData[activeTab].faqs.map((faq, index) => (
-              <div 
-                key={index} 
-                className={`faq_item ${activeIndex === index ? 'active' : ''}`}
-              >
-                <div 
-                  className="faq_question"
-                  onClick={() => toggleAccordion(index)}
+            <div className="faq-inner-wrapper">
+              {tabsData[activeTab].faqs.map((faq, index) => (
+                <div
+                  key={index}
+                  className={`faq_item ${
+                    activeIndex === index ? "active" : ""
+                  }`}
                 >
-                  <h3>{faq.question}</h3>
-                  <span className="faq_icon">
-                    <svg 
-                      viewBox="0 0 24 24" 
-                      width="24" 
-                      height="24" 
-                      stroke="currentColor" 
-                      strokeWidth="2" 
-                      strokeLinecap="round" 
-                      strokeLinejoin="round"
-                      fill="none"
-                    >
-                      <polyline points={activeIndex === index ? "18 15 12 9 6 15" : "6 9 12 15 18 9"} />
-                    </svg>
-                  </span>
+                  <div
+                    className="faq_question"
+                    onClick={() => toggleAccordion(index)}
+                  >
+                    <h3>{faq.question}</h3>
+                    <span className="faq_icon">
+                      <svg
+                        viewBox="0 0 24 24"
+                        width="24"
+                        height="24"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        fill="none"
+                      >
+                        <polyline
+                          points={
+                            activeIndex === index
+                              ? "18 15 12 9 6 15"
+                              : "6 9 12 15 18 9"
+                          }
+                        />
+                      </svg>
+                    </span>
+                  </div>
+                  <div
+                    className={`faq_answer ${
+                      activeIndex === index ? "show" : ""
+                    }`}
+                  >
+                    <p>{faq.answer}</p>
+                  </div>
                 </div>
-                <div className={`faq_answer ${activeIndex === index ? 'show' : ''}`}>
-                  <p>{faq.answer}</p>
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           <div className="faq_footer">
             <div className="faq_footer_text">
-              <h3>Become part of the first generation of AI-powered schools.</h3>
+              <h3>
+                Become part of the first generation of AI-powered schools.
+              </h3>
               <p>Connect. Innovate. Lead.</p>
             </div>
-            <Link href="https://kaabil.me/dashboard" target="_blank" rel="noopener noreferrer">
+            <Link
+              href="https://kaabil.me/dashboard"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <button className="talk_button">
-               <h4> Talk to your <br/><span>Kaabil TA</span></h4>
+                <h4>
+                  {" "}
+                  Talk to your <br />
+                  <span>Kaabil TA</span>
+                </h4>
               </button>
             </Link>
           </div>
+        </div>
+        <div class="faq-vector-shap1 position-absolute">
+          <Image
+            src={ShapImage1}
+            alt={`shap`}
+            width={444}
+            height={436}
+            className="faq-shap-img1"
+            priority
+          />
+        </div>
+        <div class="faq-vector-shap2 position-absolute">
+          <Image
+            src={ShapImage2}
+            alt={`shap`}
+            width={443}
+            height={490}
+            className="faq-shap-img2"
+            priority
+          />
+        </div>
+        <div class="faq-vector-shap3 position-absolute">
+          <Image
+            src={ShapImage3}
+            alt={`shap`}
+            width={316}
+            height={318}
+            className="faq-shap-img3"
+            priority
+          />
         </div>
       </div>
     </section>
   );
 };
 
-export default FAQ; 
+export default FAQ;
