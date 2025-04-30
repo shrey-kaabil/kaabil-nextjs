@@ -62,8 +62,8 @@ const Stories = () => {
                 <div className="story-card">
                   <div className="story-card-content">
                     <div className="story-author">
+                    <p className="story-designation">{story.designation}</p>
                       <h3 className="story-name">{story.name}</h3>
-                      <p className="story-designation">{story.designation}</p>
                     </div>
                     <div className="story-text">
                       <span className="quote-start">"</span>

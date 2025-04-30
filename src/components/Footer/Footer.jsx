@@ -15,12 +15,14 @@ import NextGenModal from '../Modal/NextGenModal';
 import MathematicsModal from '../Modal/MathematicsModal';
 import StudyModal from '../Modal/StudyModal';
 import AISchoolsModal from '../Modal/AISchoolsModal';
+import WatchDemoModal from '../Modal/WatchDemoModal';
 
 const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [isMathModalOpen, setIsMathModalOpen] = useState(false);
   const [isStudyModalOpen, setIsStudyModalOpen] = useState(false);
   const [isAISchoolsModalOpen, setIsAISchoolsModalOpen] = useState(false);
+  const [isWatchDemoModalOpen, setIsWatchDemoModalOpen] = useState(false);
 
   return (
     <>
@@ -132,7 +134,14 @@ const Footer = () => {
                 </div>
                 <ul>
                   <li><a href="https://youtube.com/shorts/V9NCqTPSjz4" target="_blank" rel="noopener noreferrer">Quiz with Geetu Bhaiya</a></li>
-                  <li><a href="https://youtube.com/shorts/V9NCqTPSjz4" target="_blank" rel="noopener noreferrer">Watch Demo !</a></li>
+                  <li>
+                    <a href="#" onClick={(e) => {
+                      e.preventDefault();
+                      setIsWatchDemoModalOpen(true);
+                    }}>
+                      Watch Demo !
+                    </a>
+                  </li>
                 </ul>
               </div>
               <div className="footer-menu-main d-lg-none d-block">
@@ -166,8 +175,8 @@ const Footer = () => {
                   <h3>CONTACT US</h3>
                 </div>
                 <ul>
-                  <li><a href="#">IIMA- Ventures</a></li>
-                  <li><a href="#">Ahmedabad, India- 380015</a></li>
+                  <li>IIMA- Ventures</li>
+                  <li>Ahmedabad, India- 380015</li>
                   <li className="footer-icon d-flex">
                     <a href="mailto:contact@kaabil.me" target="_blank" rel="noopener noreferrer">
                       <Image src={mailIcon} alt="Email" width={24} height={24} />
@@ -209,6 +218,10 @@ const Footer = () => {
       <AISchoolsModal 
         isOpen={isAISchoolsModalOpen} 
         onClose={() => setIsAISchoolsModalOpen(false)} 
+      />
+      <WatchDemoModal 
+        isOpen={isWatchDemoModalOpen}
+        onClose={() => setIsWatchDemoModalOpen(false)}
       />
     </>
   );
