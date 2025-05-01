@@ -4,8 +4,8 @@
 }
 
 .footer_wrapper {
-  background-color: #FAFAFA;
-  padding-top: 80px;
+  background-color: #fafaef;
+  padding-top: 64px;
   position: relative;
 }
 
@@ -261,7 +261,7 @@
 .footer_wrapper .main-input-box input {
   width: 100%;
   background-color: transparent;
-  border: 1px solid #FF8E25;
+  border: 1px solid #ff8e25;
   height: 50px;
   border-radius: 16px;
   padding: 0 50px 0 20px;
@@ -272,7 +272,7 @@
 
 .footer_wrapper .main-input-box input:focus {
   outline: none;
-  border-color: #4169E1;
+  border-color: #4169e1;
 }
 
 .footer_wrapper .main-input-box img {
@@ -318,7 +318,7 @@
 }
 
 .footer-menu-main ul li a:hover {
-  color: #FF8E25;
+  color: #ff8e25;
 }
 
 .footer-menu-main .footer-icon {
@@ -340,7 +340,7 @@
 
 /* Bottom Banner */
 .footer-link {
-  background-color: #627ED1;
+  background-color: #627ed1;
   padding: 15px 0;
   margin-top: 40px;
 }
@@ -352,6 +352,14 @@
 }
 
 /* Responsive Styles */
+
+@media (min-width: 992px) {
+  .footer-inner-wrapper {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 992px) {
   .footer_wrapper .main-input-box {
     width: 100%;
@@ -387,10 +395,6 @@
 }
 
 @media (max-width: 576px) {
-  .footer_wrapper {
-    padding: 40px 20px;
-  }
-  
   .footer_wrapper .container {
     padding: 0 20px;
   }
@@ -431,4 +435,4 @@
     text-align: left;
     margin-bottom: 15px;
   }
-} 
+}

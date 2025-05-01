@@ -2,15 +2,15 @@
 
 /* Challenge Learn Section */
 .chllenging-lern {
-  padding: 80px 0;
-  background-image: url("../../assets/learning-chng-bner.png.jpeg");
+  padding: 60px 0;
+  /* background-image: url("../../assets/learning-chng-bner.png.jpeg"); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   position: relative;
 }
 
-.chllenging-lern::before {
+/* .chllenging-lern::before {
   content: "";
   position: absolute;
   top: 0;
@@ -19,7 +19,7 @@
   height: 100%;
   background: rgba(255, 255, 255, 0.95);
   z-index: 1;
-}
+} */
 
 .chllenging-lern .container {
   position: relative;
@@ -112,7 +112,7 @@
 .disconnected-efforts {
   padding: 80px 0;
   /* background: #FFF9F5; */
-  background: linear-gradient(180deg, #fff9f3 0%, #ffffff 100%);
+  /* background: linear-gradient(180deg, #fff9f3 0%, #ffffff 100%); */
 }
 
 .disconnected-efforts .section-title_title h2 {
@@ -137,21 +137,21 @@
 .solution-text {
   text-align: center;
   padding: 24px;
-  background: #ffffff;
+  /* background: #ffffff; */
   border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); */
   padding: 30px;
   border-radius: 24px;
-  background: #fff9f3;
+  /* background: #fff9f3; */
   transition: all 0.3s ease;
-  border: 1px solid rgba(255, 142, 37, 0.1);
+  /* border: 1px solid rgba(255, 142, 37, 0.1); */
 }
 
-.solution-text:hover {
+/* .solution-text:hover {
   transform: translateY(-5px);
   box-shadow: 0 15px 30px rgba(255, 142, 37, 0.1);
   border-color: rgba(255, 142, 37, 0.2);
-}
+} */
 
 .solution-text h3 {
   font-size: 24px;

@@ -48,7 +48,7 @@
   .section-title_title h2 {
     font-size: 32px;
   }
-  
+
   .chlng-lrn-title {
     height: 180px;
   }
@@ -59,18 +59,18 @@
     padding-top: 30px;
     padding-bottom: 30px;
   }
-  
+
   .section-title_title h2 {
     font-size: 28px;
   }
-  
+
   .chlng-lrn-title {
     height: 150px;
     margin-bottom: 15px;
   }
-  
+
   .diss-effort {
-    padding: 20px;
+    padding: 0px;
   }
 }
 
@@ -78,12 +78,12 @@
   .section-title_title h2 {
     font-size: 24px;
   }
-  
+
   .chlng-lrn-title {
     height: 120px;
   }
-  
+
   .chlng-lrn-title h2 {
     font-size: 20px;
   }
-} 
+}

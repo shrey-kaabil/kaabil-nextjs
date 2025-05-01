@@ -3,7 +3,6 @@
   position: relative;
   padding: 60px 0;
   overflow: hidden;
-  background-color: #fff;
 }
 
 .section-title_title {
@@ -12,7 +11,7 @@
 }
 
 .section-title_title h2 {
-  color: #FF8E25;
+  color: #ff8e25;
   font-size: 40px;
   font-weight: 600;
   margin-bottom: 16px;
@@ -56,7 +55,7 @@
 }
 
 .story-name {
-  color: #FF8E25;
+  color: #ff8e25;
   font-size: 20px;
   font-weight: 600;
   margin: 0 0 8px 0;
@@ -79,7 +78,7 @@
 .quote-end {
   position: absolute;
   font-size: 40px;
-  color: #FF8E25;
+  color: #ff8e25;
   opacity: 0.2;
   font-family: Georgia, serif;
   line-height: 1;
@@ -129,7 +128,7 @@
 }
 
 .swiper-pagination-bullet-active {
-  background: #FF8E25 !important;
+  background: #ff8e25 !important;
   transform: scale(1.2);
 }
 
@@ -178,7 +177,7 @@
 
 @media (max-width: 768px) {
   .stories_wrapper {
-    padding: 40px 0;
+    padding: 40px 0 0;
   }
 
   .section-title_title h2 {
@@ -225,6 +224,9 @@
   .quote-end {
     right: -10px;
   }
+  .stories_content {
+    padding: 0px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -254,10 +256,6 @@
 @media (max-width: 575px) {
   .section-title_title h2 {
     font-size: 24px;
-  }
-
-  .stories_content {
-    padding: 16px;
   }
 
   .story-name {

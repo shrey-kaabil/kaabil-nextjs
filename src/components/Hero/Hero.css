@@ -502,10 +502,10 @@
     display: flex;
     position: relative;
     box-shadow: none;
-    max-width: 415px;
+    max-width: 375px;
     margin: 0 auto;
     min-height: unset;
-    height: 300px;
+    height: 275px;
     width: 100%;
   }
   .hero_wrapper .div-hero-box:before {

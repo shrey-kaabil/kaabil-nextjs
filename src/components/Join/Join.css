@@ -72,13 +72,13 @@
 
 @media (max-width: 768px) {
   .join_wrapper {
-    padding: 40px 15px;
+    padding: 40px 0px;
   }
 
   .section-title_title h2 {
     font-size: 32px;
     font-weight: 700;
-    color: #FF8E25;
+    color: #ff8e25;
   }
 
   .join-text {
