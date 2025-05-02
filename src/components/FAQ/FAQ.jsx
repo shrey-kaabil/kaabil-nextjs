@@ -278,7 +278,7 @@ const FAQ = () => {
             </Link>
           </div>
         </div>
-        <div class="faq-vector-shap1 position-absolute">
+        <div className="faq-vector-shap1 position-absolute">
           <Image
             src={ShapImage1}
             alt={`shap`}
@@ -288,7 +288,7 @@ const FAQ = () => {
             priority
           />
         </div>
-        <div class="faq-vector-shap2 position-absolute">
+        <div className="faq-vector-shap2 position-absolute">
           <Image
             src={ShapImage2}
             alt={`shap`}
@@ -298,7 +298,7 @@ const FAQ = () => {
             priority
           />
         </div>
-        <div class="faq-vector-shap3 position-absolute">
+        <div className="faq-vector-shap3 position-absolute">
           <Image
             src={ShapImage3}
             alt={`shap`}
