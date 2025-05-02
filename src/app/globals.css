@@ -19,10 +19,12 @@
   }
 }
 
-html,
+html {
+  overflow-x: hidden;
+}
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+
   scroll-behavior: smooth;
   font-family: var(--font-family);
 }
@@ -99,6 +101,10 @@ section {
 .navbar {
   background-color: var(--them-color) !important;
   padding: 1rem 0;
+  position: sticky;
+  top: 0px;
+  left: 0px;
+  z-index: 9;
 }
 
 .navbar-toggler:focus {
@@ -181,6 +187,29 @@ section {
   background: transparent;
   padding: 0px;
 }
+.modal_popup_mathematics .common-modal-content {
+  backdrop-filter: blur(80px);
+  background: #fbfbf733;
+  border: 2px solid #ff8e25;
+  border-radius: 24px;
+  max-height: 90vh;
+  padding: 16px;
+  box-shadow: 0 0 25px #00000040;
+}
+.modal_popup_mathematics .common-modal-body {
+  background: #ffffff;
+  border-radius: 16px;
+  gap: 0;
+  padding: 36px;
+  overflow-y: auto;
+}
+.modal_popup_mathematics .common-modal-close {
+  border: 1px solid #ff8e25;
+  color: #000000;
+  font-size: 26px;
+  z-index: 1;
+}
+
 @media (max-width: 1199px) {
   .container {
     max-width: 960px;
@@ -231,5 +260,21 @@ section {
   .modal_popup_box .start-learning-btn {
     margin-top: 12px;
     font-size: 14px;
+  }
+  .modal_popup_mathematics .common-modal-content {
+    border: 1px solid #ff8e25;
+    border-radius: 12px;
+    max-width: 90%;
+    padding: 12px;
+    overflow-y: auto;
+  }
+  .modal_popup_mathematics .common-modal-body {
+    border-radius: 12px;
+    padding: 16px 12px;
+  }
+  .modal_popup_mathematics .common-modal-close {
+    width: 24px;
+    height: 24px;
+    font-size: 19px;
   }
 }
