@@ -17,7 +17,7 @@ const Stories = () => {
     },
     {
       id: 2,
-      name: 'Grade 7 Student',
+      name: 'Grade 7',
       designation: 'Student',
       content: "I earn coins after each right answer and use them to talk to my AI Teacher – it keeps things fun and makes studying enjoyable.",
     },
@@ -30,7 +30,7 @@ const Stories = () => {
     {
       id: 4,
       name: 'Parent',
-      designation: 'Grade 9 Student',
+      designation: 'Grade 9',
       content: "My son asks Kaabil's AI tutor for hints instead of answers, and I will be able to weekly updates on his strengths – it's like a personal reliable coach at home.",
     },
   ];
