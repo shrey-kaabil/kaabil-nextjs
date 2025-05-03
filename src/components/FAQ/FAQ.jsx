@@ -264,7 +264,7 @@ const FAQ = () => {
               <p>Connect. Innovate. Lead.</p>
             </div>
             <Link
-              href="https://kaabil.me/dashboard"
+              href="https://app.kaabil.me/dashboard"
               target="_blank"
               rel="noopener noreferrer"
             >

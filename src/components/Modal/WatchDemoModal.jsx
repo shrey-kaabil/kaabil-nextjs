@@ -4,6 +4,7 @@ import demo1 from "../../assets/demo1.svg";
 import demo2 from "../../assets/demo2.svg";
 import demo3 from "../../assets/demo3.svg";
 import "./Modal.css";
+import Link from "next/link";
 
 const WatchDemoModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
@@ -29,11 +30,17 @@ const WatchDemoModal = ({ isOpen, onClose }) => {
               {/* <p>Question Creation</p> */}
             </div>
             <div className="demo-card">
+            <Link
+                    href="https://youtube.com/shorts/V9NCqTPSjz4"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
               <Image
                 src={demo2}
                 alt="Question Solving"
                 className="demo-image"
               />
+              </Link>
               {/* <p>Question Solving</p> */}
             </div>
             <div className="demo-card">
@@ -45,7 +52,13 @@ const WatchDemoModal = ({ isOpen, onClose }) => {
               {/* <p>Question Analysis</p> */}
             </div>
           </div>
+          <Link
+                    href="https://kaabil.me/dashboard"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
           <button className="start-learning-btn">Start Learning</button>
+          </Link>
         </div>
       </div>
     </div>

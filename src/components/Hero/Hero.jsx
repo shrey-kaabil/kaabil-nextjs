@@ -133,7 +133,7 @@ const Hero = () => {
                 <h3>
                   <span>Geetu Bhaiya</span> and <span>Pooja Didi</span>
                   <Link
-                    href="https://kaabil.me/dashboard"
+                    href="https://app.kaabil.me/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

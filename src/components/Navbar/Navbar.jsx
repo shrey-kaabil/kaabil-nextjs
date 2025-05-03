@@ -17,6 +17,12 @@ const Navbar = () => {
         top: offsetPosition,
         behavior: "smooth",
       });
+
+      // Close the mobile menu after clicking
+      const navbarCollapse = document.getElementById("navbarSupportedContent");
+      if (navbarCollapse) {
+        navbarCollapse.classList.remove("show");
+      }
     }
   };
 
@@ -35,7 +41,7 @@ const Navbar = () => {
         </Link>
         <div className="d-lg-none d-block ms-auto" role="search">
           <Link
-            href="https://kaabil.me/dashboard"
+            href="https://app.kaabil.me/dashboard"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -108,7 +114,7 @@ const Navbar = () => {
           </ul>
           <div className="d-flex ms-auto justify-content-center" role="search">
             <Link
-              href="https://kaabil.me/dashboard"
+              href="https://app.kaabil.me/dashboard"
               target="_blank"
               rel="noopener noreferrer"
             >

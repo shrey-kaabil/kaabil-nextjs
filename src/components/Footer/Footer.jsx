@@ -23,6 +23,38 @@ const Footer = () => {
   const [isStudyModalOpen, setIsStudyModalOpen] = useState(false);
   const [isAISchoolsModalOpen, setIsAISchoolsModalOpen] = useState(false);
   const [isWatchDemoModalOpen, setIsWatchDemoModalOpen] = useState(false);
+  const [email, setEmail] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState('');
+
+  const handleEmailSubmit = async (e) => {
+    e.preventDefault();
+    if (!email || !email.includes('@')) {
+      setSubmitStatus('Please enter a valid email address');
+      return;
+    }
+
+    setIsSubmitting(true);
+    try {
+      const response = await fetch('https://script.google.com/macros/s/AKfycbyVtxqnycgPdNFKwwxspsmEFW2ElUI4Ty-3cD_PmMDLjnSU4hHerqr731f1qiFwvf0_/exec', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ email }),
+        mode: 'no-cors' // Required for Google Apps Script
+      });
+
+      // Since we're using no-cors mode, we can't check response.ok
+      setSubmitStatus('Thank you for subscribing!');
+      setEmail('');
+    } catch (error) {
+      console.error('Error submitting email:', error);
+      setSubmitStatus('Error submitting email. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   return (
     <>
@@ -97,10 +129,27 @@ const Footer = () => {
               </div>
               <div className="col-md-6 col-sm-12">
                 <h3 className="f-text2">Lets Stay in Touch</h3>
-                <div className="main-input-box">
-                  <input type="email" placeholder="Enter your email address" />
-                  <Image src={sendIcon} alt="Send" width={24} height={24} />
-                </div>
+                <form onSubmit={handleEmailSubmit} className="main-input-box">
+                  <input 
+                    type="email" 
+                    placeholder="Enter your email address" 
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    disabled={isSubmitting}
+                  />
+                  <button  type="submit" disabled={isSubmitting}>
+                    <Image src={sendIcon} alt="Send" width={24} height={24} />
+                  </button>
+                </form>
+                {submitStatus && (
+                  <p style={{ 
+                    color: submitStatus.includes('Thank you') ? 'green' : 'red',
+                    marginTop: '10px',
+                    fontSize: '14px'
+                  }}>
+                    {submitStatus}
+                  </p>
+                )}
               </div>
             </div>
 
@@ -198,7 +247,7 @@ const Footer = () => {
                   <ul>
                     <li>
                       <a
-                        href="https://youtube.com/shorts/V9NCqTPSjz4"
+                        href="https://app.kaabil.me/course/43"
                         target="_blank"
                         rel="noopener noreferrer"
                       >

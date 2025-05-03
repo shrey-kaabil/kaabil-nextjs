@@ -1,9 +1,11 @@
+"use client";
 import React from "react";
 import "./Launching.css";
 import ThumbsUp from "../../assets/thums-up.svg";
 import ThumbsDown from "../../assets/thums-down.svg";
 import PricingShap1 from "../../assets/pricing-shap1.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const Launching = () => {
   return (
@@ -127,7 +129,15 @@ const Launching = () => {
               </li>
             </ul>
             <div className="text-center">
-              <button className="start-learning-btn">Start Learning</button>
+            <Link
+              href="https://app.kaabil.me/dashboard"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="start-learning-btn" >
+                Easy Demo Instant Setup
+              </button>
+            </Link>
             </div>
           </div>
         </div>

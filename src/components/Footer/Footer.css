@@ -275,17 +275,30 @@
   border-color: #4169e1;
 }
 
-.footer_wrapper .main-input-box img {
+.footer_wrapper .main-input-box button {
   position: absolute;
   right: 15px;
   top: 50%;
   transform: translateY(-50%);
+  background: none;
+  border: none;
+  padding: 0;
   cursor: pointer;
   transition: transform 0.3s ease;
 }
 
-.footer_wrapper .main-input-box img:hover {
+.footer_wrapper .main-input-box button:hover {
   transform: translateY(-50%) scale(1.1);
+}
+
+.footer_wrapper .main-input-box button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.footer_wrapper .main-input-box button img {
+  width: 24px;
+  height: 24px;
 }
 
 /* Footer Menu Sections */
