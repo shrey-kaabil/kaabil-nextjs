@@ -41,7 +41,7 @@ const Hero = () => {
                 <h3>
                   <span>Geetu Bhaiya</span> and <span>Neha Didi</span>
                   <Link
-                    href="https://kaabil.me/dashboard"
+                    href="https://app.kaabil.me/dashboard"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
