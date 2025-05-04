@@ -32,7 +32,7 @@
 .join-image {
   width: 100%;
   height: auto;
-  border-radius: 32px;
+  border-radius: 28px;
   object-fit: cover;
 }
 
@@ -42,7 +42,7 @@
   left: 0;
   right: 0;
   color: #fff;
-  font-size: 40px;
+  font-size: 28px;
   font-weight: 600;
   margin: 0;
   padding: 0 20px;
@@ -59,7 +59,7 @@
 /* Responsive styles */
 @media (max-width: 1200px) {
   .join-text {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 

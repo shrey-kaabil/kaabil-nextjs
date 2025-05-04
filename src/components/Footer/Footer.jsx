@@ -341,11 +341,11 @@ const Footer = () => {
               </div>
 
               <div className="col-md-3 col-6">
-                <div className="footer-menu-main">
+                <div className="footer-menu-main sm-text-black">
                   <div className="footer-title">
                     <h3>CONTACT US</h3>
                   </div>
-                  <ul>
+                  <ul >
                     <li>IIMA- Ventures</li>
                     <li>Ahmedabad, India- 380015</li>
                     <li className="footer-icon d-flex">

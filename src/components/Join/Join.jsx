@@ -1,20 +1,20 @@
 'use client'
 import React from 'react';
 import Image from 'next/image';
-import './Join.css';
-import frame89 from '../../assets/Frame 89.png';
-import frame90 from '../../assets/Frame 90.png';    
-import frame91 from '../../assets/Frame 91.png';
+import Link from 'next/link';
+import './Join.css';    
+import frame89 from '../../assets/join1.svg';
+import frame90 from '../../assets/join2.svg';    
+import frame91 from '../../assets/join3.svg';
+import frame92 from '../../assets/join4.svg';
 
 
 const Join = () => {
   const items = [
-    { id: 1, title: 'Title', image: frame89 },
-    { id: 2, title: 'Title', image: frame90 },
-    { id: 3, title: 'Title', image: frame91 },
-    { id: 4, title: 'Title', image: frame89 },
-    // { id: 5, title: 'Title', image: frame90 },
-    // { id: 6, title: 'Title', image: frame91 },
+    { id: 1, title: 'UPSC GS Papers', image: frame89 ,link: 'https://app.kaabil.me/course/64'},
+    { id: 2, title: 'Grade  6', image: frame90 ,link: 'https://app.kaabil.me/course/16'},
+    { id: 3, title: 'Grade 12', image: frame91 ,link: 'https://app.kaabil.me/course/110'},
+    { id: 4, title: 'JEE', image: frame92 ,link: 'https://app.kaabil.me/course/111'},
   ];
 
   return (
@@ -30,13 +30,16 @@ const Join = () => {
             {items.map((item) => (
               <div key={item.id} className="col-lg-3 col-md-6 mt-4">
                 <div className="join-item">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={300}
-                    height={238}
-                    className="join-image"    
-                  />
+                  <Link target="_blank" href={item.link} passHref >
+                      <div className="join-text text-start">{item.title}</div>
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        width={300}
+                        height={238}
+                        className="join-image"    
+                      />
+                  </Link> 
                 </div>
               </div>
             ))}
@@ -45,13 +48,16 @@ const Join = () => {
             {items.map((item) => (
               <div key={item.id} className="mobile-scroll-item">
                 <div className="join-item">
-                  <Image
-                    src={item.image}
-                    alt={item.title}
-                    width={300}
-                    height={238}
-                    className="join-image"    
-                  />
+                  <Link target="_blank" href={item.link} passHref >
+                      <div className="join-text text-start">{item.title}</div>
+                      <Image
+                        src={item.image}
+                        alt={item.title}
+                        width={300}
+                        height={238}
+                        className="join-image"    
+                      />
+                  </Link>
                 </div>
               </div>
             ))}
