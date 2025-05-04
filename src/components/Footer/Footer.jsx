@@ -16,6 +16,7 @@ import MathematicsModal from "../Modal/MathematicsModal";
 import StudyModal from "../Modal/StudyModal";
 import AISchoolsModal from "../Modal/AISchoolsModal";
 import WatchDemoModal from "../Modal/WatchDemoModal";
+import UnderConstructionModal from "../Modal/UnderConstructionModal";
 
 const Footer = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -23,6 +24,7 @@ const Footer = () => {
   const [isStudyModalOpen, setIsStudyModalOpen] = useState(false);
   const [isAISchoolsModalOpen, setIsAISchoolsModalOpen] = useState(false);
   const [isWatchDemoModalOpen, setIsWatchDemoModalOpen] = useState(false);
+  const [isUnderConstructionModalOpen, setIsUnderConstructionModalOpen] = useState(false);
   const [email, setEmail] = useState('');
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState('');
@@ -179,7 +181,15 @@ const Footer = () => {
                       </a>
                     </li>
                     <li>
-                      <a href="#">Kaabil for Learners</a>
+                      <a
+                        href="#"
+                        onClick={(e) => {
+                          e.preventDefault();
+                          setIsUnderConstructionModalOpen(true);
+                        }}
+                      >
+                        Kaabil for Learners
+                      </a>
                     </li>
                   </ul>
                 </div>
@@ -341,13 +351,13 @@ const Footer = () => {
               </div>
 
               <div className="col-md-3 col-6">
-                <div className="footer-menu-main sm-text-black">
+                <div className="footer-menu-main ">
                   <div className="footer-title">
                     <h3>CONTACT US</h3>
                   </div>
                   <ul >
-                    <li>IIMA- Ventures</li>
-                    <li>Ahmedabad, India- 380015</li>
+                    <li className="text-black">IIMA- Ventures</li>
+                    <li className="text-black">Ahmedabad, India- 380015</li>
                     <li className="footer-icon d-flex">
                       <a
                         href="mailto:contact@kaabil.me"
@@ -415,6 +425,10 @@ const Footer = () => {
       <WatchDemoModal
         isOpen={isWatchDemoModalOpen}
         onClose={() => setIsWatchDemoModalOpen(false)}
+      />
+      <UnderConstructionModal
+        isOpen={isUnderConstructionModalOpen}
+        onClose={() => setIsUnderConstructionModalOpen(false)}
       />
     </>
   );

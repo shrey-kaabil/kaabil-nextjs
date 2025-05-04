@@ -30,34 +30,35 @@ const WatchDemoModal = ({ isOpen, onClose }) => {
               {/* <p>Question Creation</p> */}
             </div>
             <div className="demo-card">
+           
+              <Image
+                src={demo2}
+                alt="Question Solving"
+                className="demo-image"
+              />
+              {/* <p>Question Solving</p> */}
+            </div>
+            <div className="demo-card">
             <Link
                     href="https://youtube.com/shorts/V9NCqTPSjz4"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
               <Image
-                src={demo2}
-                alt="Question Solving"
-                className="demo-image"
-              />
-              </Link>
-              {/* <p>Question Solving</p> */}
-            </div>
-            <div className="demo-card">
-              <Image
                 src={demo1}
                 alt="Question Analysis"
                 className="demo-image"
               />
+              </Link>
               {/* <p>Question Analysis</p> */}
             </div>
           </div>
           <Link
-                    href="https://kaabil.me/dashboard"
+                    href="https://app.kaabil.me/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-          <button className="start-learning-btn">Start Learning</button>
+          <button className="start-learning-btn1">Start Learning</button>
           </Link>
         </div>
       </div>
