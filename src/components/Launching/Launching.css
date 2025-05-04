@@ -361,8 +361,11 @@
     min-width: auto;
     width: 100%;
     margin-top: 16px;
-    padding: 4px 15px;
-    font-size: 9px;
+    padding: 8px 15px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
   .alternative-platforms {
     border-radius: 16px;
