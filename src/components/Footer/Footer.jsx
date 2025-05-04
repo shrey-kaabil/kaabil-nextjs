@@ -356,8 +356,8 @@ const Footer = () => {
                     <h3>CONTACT US</h3>
                   </div>
                   <ul >
-                    <li className="text-black">IIMA- Ventures</li>
-                    <li className="text-black">Ahmedabad, India- 380015</li>
+                    <p className="text-black">IIMA- Ventures</p>
+                    <p className="text-black">Ahmedabad, India- 380015</p>
                     <li className="footer-icon d-flex">
                       <a
                         href="mailto:contact@kaabil.me"
