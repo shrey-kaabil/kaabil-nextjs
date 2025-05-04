@@ -128,7 +128,7 @@ const Launching = () => {
                 Personalized Revision & Recommendations
               </li>
             </ul>
-            <div className="text-center mt-4">
+            <div className="text-center md-mt-4">
             <Link
               href="https://app.kaabil.me/dashboard"
               target="_blank"
