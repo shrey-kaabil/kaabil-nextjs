@@ -108,7 +108,7 @@ const Navbar = () => {
                 className="nav-link"
                 onClick={() => scrollToSection("launching")}
               >
-                AI-Schools
+                AI Schools
               </button>
             </li>
           </ul>
