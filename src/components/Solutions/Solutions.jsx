@@ -20,11 +20,11 @@ const Solutions = () => {
       bgColor: "EDF6FD",
       content: {
         text: {
-          title: "Teachers Can Instantly Generate And Share Homework",
+          title: "Generate & Share Homework, Tests, Practise Questions in Seconds",
           points: [
-            "Instantly Generate Curriculum-Aligned Questions",
-            "Convert Any PDF Into A Custom Computer-Based Test",
-            "Personalize Questions by Topic, Pattern, Difficulty, Pace, And Needs",
+            "Auto-Generate Curriculum-Aligned Questions",
+            "Turn PDFs into Customised Computer-Based Tests",
+            "Personalize by Topic, Difficulty, Pace & Student Needs",
           ],
         },
         image: solutionImg2,
@@ -36,12 +36,12 @@ const Solutions = () => {
       bgColor: "FEF1DA",
       content: {
         text: {
-          title: "Understand The Thought Behind Each Question Asked",
+          title: "Understand the Reasoning Behind Every Question",
           points: [
-            "No Answers Given Directly",
-            "A Safe Space to Practice and Try each Question",
-            "Enjoy Freedom Of Learning",
-            "Track Lesson Strengths through Earned XP",
+            "Try First, Answer Later",
+            "Hints on Demand, Understand Every Step",
+            "Explore Independently, Practise Freely",
+            "Track progress through XP milestones and lesson analytics",
           ],
         },
         image: solutionImg,
@@ -53,12 +53,12 @@ const Solutions = () => {
       bgColor: "ECF7FF",
       content: {
         text: {
-          title: "No More Late Night Alone Problem Solving",
+          title: "Never Face Late-Night Doubts Alone— Practice with us",
           points: [
-            "Ask your Kaabil TA any Doubt any Time in English or Hindi",
-            "Get Hints To Solve And Handy Tricks To Revise",
-            "Build Critical Thinking",
-            "Type, Talk or Upload PDF to receive Instant Feedback",
+            "Get help from your Kaabil TA—24/7, in English or Hindi",
+            "Receive targeted hints and quick revision tips",
+            "Strengthen your problem-solving mindset",
+            "Type, talk, or upload a PDF to get instant feedback",
           ],
         },
         image: solutionImg3,
@@ -70,11 +70,11 @@ const Solutions = () => {
       bgColor: "B5D5EB",
       content: {
         text: {
-          title: "Personalized Guidance & Recommendations",
+          title: "Data-Driven Insights & Smart Recommendations",
           points: [
-            "Detailed Analysis Of Each Attempt Of The Question",
-            "Targeted Revision Tips For Every Lesson",
-            "Celebrate wins with Targeted Support and Correct Learning Gaps Early",
+            "View detailed stats on every attempt",
+            "Tailored revision tips that guide both practice and instruction",
+            "Identify strengths and weaknesses at a glance—Empowering Learners, Educators & Institutes",
           ],
         },
         image: solutionImg4,
