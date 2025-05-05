@@ -188,7 +188,7 @@ const Footer = () => {
                           setIsUnderConstructionModalOpen(true);
                         }}
                       >
-                        Kaabil for Learners
+                        Kaabil for Learners- under construction
                       </a>
                     </li>
                   </ul>
@@ -198,7 +198,7 @@ const Footer = () => {
               <div className="col-md-3 col-6">
                 <div className="footer-menu-main">
                   <div className="footer-title">
-                    <h3>UPCOMING PROJECTS</h3>
+                    <h3>UPCOMING Features</h3>
                   </div>
                   <ul>
                     <li>
@@ -261,7 +261,7 @@ const Footer = () => {
                         target="_blank"
                         rel="noopener noreferrer"
                       >
-                        Quiz with Geetu Bhaiya
+                        Quiz with Geetu Bhaiya !
                       </a>
                     </li>
                     <li>
@@ -397,8 +397,8 @@ const Footer = () => {
               <div className="row">
                 <div className="col-12 text-center">
                   <p className="m-0">
-                    Kaabil is an early-stage pilot built to simplify learning
-                    and ensure equal opportunities for every child.
+                    Kaabil is an early-stage pilot built by IISc-IIMA grads to make practice more effective 
+                    and ensure equal access to education for every child.
                   </p>
                 </div>
               </div>
