@@ -46,7 +46,7 @@ const Navbar = () => {
             rel="noopener noreferrer"
           >
             <button className="btn nav-btn" type="submit">
-              Use The App
+              Use the App
             </button>
           </Link>
         </div>
